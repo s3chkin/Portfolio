@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #050815;
+}
+
+.bg-page1 {
+  background-image: url("./source/herobg.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+/*--- typewriter ---*/
+#typewriter {
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  border-right: 2px solid #ffffff;
+  padding-right: 5px;
+  animation: blink 0.7s step-end infinite;
+  border-right: 0.15em solid orange;
+  animation: typing 3.5s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #ffffff;
+  }
+}
+
+.typewriter2 {
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px hsla(258, 94%, 67%, 0.856);
+  }
+  50% {
+    box-shadow: 0 0 40px hsla(258, 33%, 60%, 0.856);
+  }
+  100% {
+    box-shadow: 0 0 10px #8b5cfada;
+  }
+}
+
+.gradient-image-container img {
+  animation: glow 1.5s ease-in-out infinite;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.progress {
+  height: 10px;
+
+  border-radius: 0px;
+}
+
+.skills {
+  padding-top: 25px;
+  width: 550px;
+}
+
+.progress-bar {
+  background-color: #8b5cfada;
+}
+.techStackIconsBody {
+  width: 80px;
+  height: 80px;
+  background-color: #302850;
+  border-radius: 10%;
+  display: flex; /* Подравнява съдържанието в центъра */
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #8e5efa;
+  box-shadow: 0 0 20px hsla(258, 94%, 67%, 0.856);
+}
+
+.techStackIconsBody:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  box-shadow: 0 0 40px hsla(258, 33%, 60%, 0.856);
+}
+
+.techStackIconsBody img {
+  transition: all 0.3s ease-in-out;
+}
+
+.techStackIconsBody:hover img {
+  transform: scale(1.2);
+}
+
+.project-btn {
+  background-color: rgba(255, 255, 255, 0);
+  background: linear-gradient(#20193e, #20193e) padding-box,
+    linear-gradient(60deg, #00f, #00e8ff) border-box;
+  color: #ffffff;
+  padding: 3px 70px;
+  border: 3px solid transparent;
+  border-radius: 40px;
+  display: inline-block;
+  font-size: 22px;
+  box-shadow: 0 0 40px hsla(259, 100%, 55%, 0.856);
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, filter 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.project-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(60deg, #00f, #00e8ff) padding-box,
+    linear-gradient(120deg, #00f, #00e8ff) border-box;
+  color: white;
+  filter: brightness(1.2);
+}
+
+/* ----- contact us ----- */
+.contact {
+  padding: 70px 0;
+}
+
+.contact .heading h2 {
+  font-size: 2 rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .heading h2 span {
+  color: #fd5e53;
+  font-weight: bold;
+}
+
+.contact .heading p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #999999;
+  margin: 20px 0 60px;
+  padding: 0;
+}
+
+.contact .form-control {
+  padding: 25px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border: 1px solid #8e5efa;
+  border-radius: 10px;
+  background-color: #050815;
+  /* background-color: #f3f3f3; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+}
+
+.contact button.btn {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #302850;
+  color: #ffffff;
+  width: 100%;
+  border: 1px solid #8e5efa;
+  box-shadow: 0 0 20px hsla(258, 94%, 67%, 0.856);
+}
+.contact button.btn:hover {
+  background-color: #050815;
+  width: 100%;
+  border: 1px solid #fd5e53;
+  border: 1px solid #8e5efa;
+  box-shadow: 0 0 20px hsla(258, 100%, 89%, 0.856);
+  color: hsla(258, 94%, 67%, 0.856);
+}
+
+.contact .title h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact .title p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.6;
+  margin: 0 0 40px;
+}
+
+.contact .content .info {
+  margin-top: 30px;
+}
+.contact .content .info i {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  color: #8e5efa;
+  margin-right: 20px;
+  text-align: center;
+  width: 20px;
+}
+.contact .content .info h4 {
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.contact .content .info h4 span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #999999;
+}
