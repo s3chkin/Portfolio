@@ -134,7 +134,7 @@ body {
   transform: scale(1.2);
 }
 
-.project-btn {
+/* .project-btn {
   background-color: rgba(255, 255, 255, 0);
   background: linear-gradient(#20193e, #20193e) padding-box,
     linear-gradient(60deg, #00f, #00e8ff) border-box;
@@ -156,8 +156,26 @@ body {
     linear-gradient(120deg, #00f, #00e8ff) border-box;
   color: white;
   filter: brightness(1.2);
+} */
+.cardText {
+  height: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
+.btn-primary {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #5642a5;
+  color: #ffffff;
+  width: 45%;
+  border: 1px solid #8e5efa;
+  box-shadow: 0 0 20px hsla(258, 94%, 67%, 0.856);
+}
+.btn-primary:hover {
+  background-color: #8e5efa;
+  border: 1px solid #8e5efa;
+}
 /* ----- contact us ----- */
 .contact {
   padding: 70px 0;
@@ -196,7 +214,9 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
 }
-
+.contact .form-control:focus {
+  box-shadow: 0 0 20px hsla(258, 100%, 89%, 0.856);
+}
 .contact button.btn {
   padding: 10px;
   border-radius: 10px;
