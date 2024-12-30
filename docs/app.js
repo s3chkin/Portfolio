@@ -48,3 +48,37 @@ window.addEventListener("load", () => {
     document.body.removeChild("loader");
   });
 });
+
+//send Mail
+function sendMail() {
+  var params = {
+    from_name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  // изчиства полетата
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("message").value = "";
+
+  // Показва информативното съобщение
+  function msg() {
+    if (window.matchMedia("(max-width: 770px)").matches) {
+      document.querySelector("#alert-success-mobile").style.display = "block";
+      document.querySelector("#alert-success-desktop").style.display = "none";
+    } else {
+      document.querySelector("#alert-success-mobile").style.display = "none";
+      document.querySelector("#alert-success-desktop").style.display = "block";
+    }
+  }
+
+  emailjs.send("service_30gsgtz", "template_j5wfhr8", params).then(
+    () => {
+      msg();
+    },
+    (error) => {
+      console.error("Error:", error);
+    }
+  );
+}
