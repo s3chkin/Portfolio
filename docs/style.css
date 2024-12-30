@@ -128,10 +128,78 @@ body {
   }
 }
 
+.timeline {
+  position: relative;
+  display: block;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 2px;
+  height: 95%;
+  background-color: #e3e5e9;
+}
+
+.timeline li {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  width: 18px;
+  height: 18px;
+  background-color: #32037e;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.timeline li .title {
+  width: 180px;
+  padding: 6px 20px;
+  background-color: #75297b;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 30px 0 60px 30px;
+  text-align: center;
+}
+
+.timeline li .details {
+  background-color: #302850;
+  margin-top: 8px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.timeline li .details h5,
+.timeline li .details p {
+  margin-bottom: 0;
+}
+
+.timeline li .details small {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 .progress {
   height: 10px;
-
-  border-radius: 0px;
+  border-radius: 5px;
 }
 
 .skills {
@@ -192,6 +260,7 @@ body {
   color: white;
   filter: brightness(1.2);
 } */
+
 .cardText {
   height: 30%;
   overflow: hidden;
@@ -210,6 +279,12 @@ body {
 .btn-primary:hover {
   background-color: #8e5efa;
   border: 1px solid #8e5efa;
+}
+
+.btn-primary:focus {
+  background-color: #5642a5;
+  border: 1px solid #8e5efa;
+  box-shadow: 0 0 20px hsla(258, 94%, 67%, 0.856);
 }
 /* ----- contact us ----- */
 .contact {
@@ -252,6 +327,7 @@ body {
 .contact .form-control:focus {
   box-shadow: 0 0 20px hsla(258, 100%, 89%, 0.856);
 }
+
 .contact button.btn {
   padding: 10px;
   border-radius: 10px;

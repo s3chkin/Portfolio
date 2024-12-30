@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="./source/Macbook Pro.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -19,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="color: black;">
         <div class="container-fluid" style="max-width: 1400px;">
-            <a class="navbar-brand" href="#" style="color: white;">Sechkin</a>
+            <a class="navbar-brand" href="#" style="color: white; font-weight: 900; font-size: 25px;">Sechkin</a>
             <button style="color: white;" class="navbar-toggler first-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -56,6 +57,9 @@
                             <br>
                             technologies student.
                         </p>
+                        <a href="./source/Sechkin - CV.pdf" target="_blank" type="button" class="btn btn-primary"
+                            style="width: 150px;" download="">
+                            View CV</a>
                     </div>
                     <div class="col-12 col-md-6 text-center" data-aos="fade-left">
                         <img decoding="async" src="./source/Macbook Pro.png" alt="Macbook Pro" class="img-fluid"
@@ -69,9 +73,90 @@
     <div class="loader"></div>
 
     <div class="container" style="margin-top: 80px;">
+        <div>
+            <!-- <p style="color: #8894d7; border-left: solid; padding-left: 5px; margin-bottom: 25px;"> About Me</p> -->
+            <h2 class="fw-bold text-white" style="margin-bottom: 10px;"><b>About Me</b></h2>
+
+            <div style="color: white; margin-top: 15px; margin-bottom: 25px;">
+                <div class="d-flex justify-content-between">
+                    <!-- <div class="float-start">
+                        <p style="border-left: solid; border-color: #8e5efa; padding-left: 5px;"> Name: Sechkin</p>
+                        <p style="border-left: solid;border-color: #8e5efa; padding-left: 5px;"> Age: 20</p>
+                        <p style="border-left: solid;border-color: #8e5efa; padding-left: 5px;"> G-mail:
+                            seckins191@gmail.com</p>
+                        <p style="border-left: solid;border-color: #8e5efa; padding-left: 5px;"> Lives in: Varna,
+                            BUlgaria</p>
+                        <p style="border-left: solid;border-color: #8e5efa; padding-left: 5px;"> Phone: 0895073711</p>
+                    </div> -->
+                    <div>
+
+                        <!-- <p class="float-end" style="color: white; width: 40%;">I am Sechkin, 20 years old, with
+                            experience and interest in
+                            web
+                            programming. I
+                            graduated from PGMETT "Hristo Botev" in Shumen, specializing in "Applied Programming".
+                            Currently, I
+                            am a second-year student at the Technical University of Varna, majoring in "Software and
+                            Internet
+                            Technologies".
+                            Since 2020, I have been involved in web programming, with experience in developing
+                            Front-end,
+                            Back-end, and Full-Stack projects. I create functional and aesthetically pleasing web
+                            applications.
+                            In addition to the technologies listed below, I have basic knowledge of C++ and Java, and in
+                            the
+                            future, I plan to expand my skills with React and Node.js.
+                        </p> -->
+                    </div>
+
+                    <div class="container pt-5">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-6 wow fadeInRight">
+                                <h2 class="fw-normal">Education</h2>
+                                <ul class="timeline mt-4 pr-md-5">
+                                    <li data-aos="fade-left">
+                                        <div class="title">2018 - 2023</div>
+                                        <div class="details">
+                                            <h5>PGMETT "Hr. Botev"</h5>
+                                            <small class="fg-theme">Secondary education</small>
+                                            <p>I studied and graduated in Applied Programming in secondary school. I
+                                                started getting involved in web programming as early as 2020.</p>
+                                        </div>
+                                    </li>
+                                    <li data-aos="fade-right">
+                                        <div class="title">2023 - now</div>
+                                        <div class="details">
+                                            <h5>Technical university of Varna</h5>
+                                            <small class="fg-theme">University</small>
+                                            <p>I am pursuing higher education and am currently in my second year,
+                                                specializing in Software and Internet Technologies.</p>
+                                        </div>
+                                    </li>
+                                    <li data-aos="fade-left">
+                                        <div class="title">now</div>
+                                        <div class="details">
+                                            <h5>Udemy courses</h5>
+                                            <small class="fg-theme">Video tutorials</small>
+                                            <p>I watch video tutorials on JavaScript on Udemy and then I plan to learn
+                                                React.js and Node.js.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <h2 class="fw-bold text-white" style="margin-bottom: 10px;"><b>My Skills</b></h2>
         <p style="color: #8894d7; border-left: solid; padding-left: 5px; margin-bottom: 25px;"> Tech stack</p>
-
-
         <div>
             <div class="d-flex flex-wrap justify-content-around gap-3" data-aos="fade-zoom-in">
                 <div class="techStackIconsBody">
@@ -84,6 +169,11 @@
 
                 <div class="techStackIconsBody">
                     <img decoding="async" src="./source/js.png" alt="JavaScript" class="img-fluid" style="width: 55px;">
+                </div>
+
+                <div class="techStackIconsBody">
+                    <img decoding="async" src="./source/efCore.png" alt="JavaScript" class="img-fluid"
+                        style="width: 55px;">
                 </div>
 
                 <div class="techStackIconsBody">
@@ -140,21 +230,23 @@
                             <div class="progress-bar " style="width:40%;" data-aos="slide-right"></div>
                         </div>
                     </div>
+
+
                 </div>
 
                 <!-- Втора колона -->
                 <div class="col-12 col-md-6">
                     <div class="mb-4">
                         <div class="d-flex justify-content-between text-white">
-                            <p>HTML</p>
-                            <p>80%</p>
+                            <p>HTML + CSS</p>
+                            <p>75%</p>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width:80%;" data-aos="slide-right"></div>
+                            <div class="progress-bar" style="width:75%;" data-aos="slide-right"></div>
                         </div>
                     </div>
 
-                    <div class="mb-4">
+                    <!-- <div class="mb-4">
                         <div class="d-flex justify-content-between text-white">
                             <p>CSS</p>
                             <p>75%</p>
@@ -162,7 +254,7 @@
                         <div class="progress">
                             <div class="progress-bar " style="width:75%;" data-aos="slide-right"></div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="mb-4">
                         <div class="d-flex justify-content-between text-white">
@@ -171,6 +263,16 @@
                         </div>
                         <div class="progress">
                             <div class="progress-bar " style="width:60%;" data-aos="slide-right"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between text-white">
+                            <p>Entity Framework Core</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar " style="width:70%;" data-aos="slide-right"></div>
                         </div>
                     </div>
                 </div>
@@ -189,7 +291,7 @@
 
                 <div class="d-flex flex-wrap gap-3 justify-content-center">
                     <!-- Project 1 -->
-                    <div class="p-3 text-white" data-aos="fade-zoom-in"
+                    <div class="p-3 text-white" data-aos="slide-up"
                         style="background-color: #20193e; border-radius: 15px; width: 330px; min-height: 500px; display: flex; flex-direction: column;">
                         <div class="d-flex justify-content-center">
                             <img decoding="async" src="./source/Freelancer.jpg" alt="Freelancer"
@@ -198,49 +300,21 @@
                         <h3 class="mt-3">Freelancer</h3>
                         <p class="text-secondary flex-grow-1">A web application for searching and offering services. The
                             site allows posting and accepting ads, creating requests, and communication with the
-                            administrator. The seller can see the buyer's progress.</p>
+                            administrator. The seller can see the buyer's progress...</p>
                         <div class="d-flex justify-content-center mt-auto">
                             <a type="button" class="project-btn btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#freelancerModal">
                                 More info
                             </a>
-                            <!-- Modal -->
-                            <div class="modal fade" id="freelancerModal" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
-                                                Freelancer</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body" style="color: gray;">
-                                            A web application for searching and offering services. The site allows
-                                            posting and accepting ads, creating requests, and communication with the
-                                            administrator. The seller can see the buyer's progress, but only if the
-                                            buyer marks it in the ad itself. <br> Progress is indicated in percentages.
-                                            The
-                                            buyer has the right to select additional services from comparison tables,
-                                            depending on the price. Revisions, delivery time, and other details depend
-                                            on the price.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <a type="button" class="btn btn-primary">Understood</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <a href="https://github.com/s3chkin/Freelancer" target="_blank" type="button"
                                 class="project-btn btn btn-primary ms-2">View</a>
                         </div>
                     </div>
 
+
                     <!-- Project 2 -->
-                    <div class="p-3 text-white" data-aos="fade-zoom-in"
+                    <div class="p-3 text-white" data-aos="slide-up"
                         style="background-color: #20193e; border-radius: 15px; width: 330px; min-height: 500px; display: flex; flex-direction: column;">
                         <div class="d-flex justify-content-center">
                             <img decoding="async" src="./source/TripPlanner.jpg" alt="Trip Planner"
@@ -249,43 +323,12 @@
                         <h3 class="mt-3">Trip Planner</h3>
                         <p class="text-secondary flex-grow-1">A web application designed to facilitate and organize
                             excursions and trips. The project focuses on developing a platform that provides users with
-                            the opportunity to explore excursions and cruises.</p>
+                            the opportunity to explore excursions and cruises...</p>
                         <div class="d-flex justify-content-center mt-auto">
                             <a type="button" class="project-btn btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#TripPlannerModal">
                                 More info
                             </a>
-                            <!-- Modal -->
-                            <div class="modal fade" id="TripPlannerModal" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered"> <!-- Добавен клас за центриране -->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
-                                                Trip Planner (Excursion organizer)</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body" style="color: gray;">
-                                            A web application designed to facilitate and organize excursions and trips.
-                                            The project focuses on developing a platform that provides users with the
-                                            opportunity to explore excursions and cruises, offering extensive
-                                            information and convenient management tools.
-                                            <br>
-                                            The system offers different levels of access and permissions, allowing each
-                                            user to register, select excursions, and receive detailed information. The
-                                            administrator, in turn, has the ability to manage information about
-                                            excursions, users, and their bookings.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <a type="button" class="btn btn-primary">Understood</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                             <a href="https://drive.google.com/file/d/1GUnH2oncmhqNWtYejqSJTU7p0mP-nFma/view?usp=sharing"
                                 target="_blank" class="project-btn btn btn-primary ms-2">View</a>
@@ -308,44 +351,15 @@
                         <h3 class="mt-3">Full Travel</h3>
                         <p class="text-secondary flex-grow-1">A web application designed to connect passengers seeking
                             shared rides between cities with drivers offering available seats in their vehicles. Through
-                            FullTravel, users can easily find a suitable shared ride.</p>
+                            FullTravel, users can easily find a suitable shared ride...</p>
                         <div class="d-flex justify-content-center mt-auto">
                             <a type="button" class="project-btn btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#FullTravelModal">
                                 More info
                             </a>
-                            <!-- Modal -->
-                            <div class="modal fade" id="FullTravelModal" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered"> <!-- Добавен клас за центриране -->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
-                                                Full Travel</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body" style="color: gray;">
-                                            A web application designed to connect passengers seeking shared rides
-                                            between cities with drivers offering available seats in their vehicles.
-                                            Through FullTravel, users can easily find a suitable shared ride or post
-                                            their own listing for a shared trip.
-                                            <br>
-                                            The web application provides a convenient and secure way to organize
-                                            intercity transportation, reducing costs and unwanted emissions. With
-                                            FullTravel, users can save time, money, and contribute to a cleaner
-                                            environment by sharing rides with others.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <a type="button" class="btn btn-primary">Understood</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a type="button" class="project-btn btn btn-primary ms-2">View</a>
+
+                            <a href="https://drive.google.com/file/d/1NIQzYzrLGFOeDE9ImXvO4huSTOwsueif/view?usp=sharing"
+                                target="_blank" class="project-btn btn btn-primary ms-2">View</a>
                         </div>
                     </div>
                 </div>
@@ -363,17 +377,154 @@
                                 class="img-fluid rounded" style="width: 100%; max-width: 300px;">
                         </div>
                         <h3 class="mt-3">Metal Acquirer</h3>
-                        <p class="text-secondary flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Incidunt aut, suscipit obcaecati a soluta consectetur sed quas nesciunt labore porro modi
-                            omnis vitae ipsa hic, id molestias, aliquid ratione animi.</p>
+                        <p class="text-secondary flex-grow-1">Metal Acquirer is a website designed to inform users about
+                            the types of metals collected by the client and the locations from which they can be
+                            delivered. The site provides easy access to...
+                        </p>
                         <div class="d-flex justify-content-center mt-auto">
-                            <a type="button" class="project-btn btn btn-primary">More info</a>
-                            <a type="button" class="project-btn btn btn-primary ms-2">View</a>
+                            <a type="button" class="project-btn btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#MetalAcquirerModal">More
+                                info</a>
+                            <a href="https://github.com/s3chkin/Metal-Acquirer" target="_blank" type="button"
+                                class="project-btn btn btn-primary ms-2">View</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+        <!-- ---------------bootstrap modal windows------------------- -->
+        <div class="modal fade" id="freelancerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
+                            Freelancer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="color: gray;">
+                        <div class="d-flex justify-content-center">
+                            <img decoding="async" src="./source/Freelancer.jpg" alt="Freelancer"
+                                class="img-fluid rounded" style="width: 100%; ">
+                        </div>
+                        A web application for searching and offering services. The site allows
+                        posting and accepting ads, creating requests, and communication with the
+                        administrator. The seller can see the buyer's progress, but only if the
+                        buyer marks it in the ad itself. <br> Progress is indicated in percentages.
+                        The
+                        buyer has the right to select additional services from comparison tables,
+                        depending on the price. Revisions, delivery time, and other details depend
+                        on the price.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a type="button" class="btn btn-primary">Understood</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="TripPlannerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"> <!-- Добавен клас за центриране -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
+                            Trip Planner (Excursion organizer)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="color: gray;">
+                        <div class="d-flex justify-content-center">
+                            <img decoding="async" src="./source/TripPlanner.jpg" alt="Trip Planner"
+                                class="img-fluid rounded" style="width: 100%; ">
+                        </div>
+                        A web application designed to facilitate and organize excursions and trips.
+                        The project focuses on developing a platform that provides users with the
+                        opportunity to explore excursions and cruises, offering extensive
+                        information and convenient management tools.
+                        <br>
+                        The system offers different levels of access and permissions, allowing each
+                        user to register, select excursions, and receive detailed information. The
+                        administrator, in turn, has the ability to manage information about
+                        excursions, users, and their bookings.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a type="button" class="btn btn-primary">Understood</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="FullTravelModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
+                            Full Travel</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="color: gray;">
+                        <div class="d-flex justify-content-center">
+                            <img decoding="async" src="./source/FullTravel.jpg" alt="Trip Planner"
+                                class="img-fluid rounded" style="width: 100%; ">
+                        </div>
+                        A web application designed to connect passengers seeking shared rides
+                        between cities with drivers offering available seats in their vehicles.
+                        Through FullTravel, users can easily find a suitable shared ride or post
+                        their own listing for a shared trip.
+                        <br>
+                        The web application provides a convenient and secure way to organize
+                        intercity transportation, reducing costs and unwanted emissions. With
+                        FullTravel, users can save time, money, and contribute to a cleaner
+                        environment by sharing rides with others.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a type="button" class="btn btn-primary">Understood</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="MetalAcquirerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
+                            Metal Acquirer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="color: gray;">
+                        <div class="d-flex justify-content-center">
+                            <img decoding="async" src="./source/Metal Acquirer.jpg" alt="Metal Acquirer"
+                                class="img-fluid rounded" style="width: 100%; ">
+                        </div>
+                        Metal Acquirer is a website designed to inform users about
+                        the types of metals collected by the client and the locations from which they can be
+                        delivered. <br> The site provides easy access to essential information, such as a list of
+                        metals,
+                        contact details, and more. Its clean and functional design ensures maximum user convenience.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="https://s3chkin.github.io/Metal-Acquirer/" target="_blank" type="button"
+                            class="btn btn-warning">View
+                            Demo</a>
+                        <a type="button" class="btn btn-primary">Understood</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div style="margin-top: 20px;" data-aos="fade-zoom-in">
             <p style="color: #8894d7; border-left: solid; padding-left: 5px; margin-bottom: 25px;margin-top: 25px;">
@@ -414,12 +565,12 @@
         </div>
 
         <p style="color: #8894d7; border-left: solid; padding-left: 5px; margin-bottom: 25px;margin-top: 25px;">
-            Contact us
+            Contact me
         </p>
-        <section class="contact" id="contact" data-aos="fade-zoom-in">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="row hidden">
-                    <div class="col-md-5">
+                    <div class="col-md-5" data-aos="fade-zoom-in">
                         <div class="title">
                             <h3>Contact detail</h3>
                             <p>Or use the provided alternative contact methods.</p>
@@ -450,7 +601,7 @@
 
                     <div class="col-md-7 hidden">
 
-                        <form onsubmit="sendMail(); return false;">
+                        <form onsubmit="sendMail(); return false;" data-aos="fade-zoom-in">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <label for="name" style="display: none;"></label>
@@ -489,7 +640,6 @@
             once: true, // Всички анимации се стартират само веднъж
             duration: 1200,
         });
-
     </script>
 
 
