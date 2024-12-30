@@ -350,6 +350,7 @@ body {
 .contact .title h3 {
   font-size: 18px;
   font-weight: 600;
+  color: #8e5efa;
 }
 
 .contact .title p {
@@ -378,11 +379,22 @@ body {
   font-weight: bold;
 }
 
-.contact .content .info h4 span {
+.contact .content .info h4 {
   font-size: 13px;
+  font-weight: 300;
+  color: #c7c7c7;
+}
+
+.contact .content .info h4 span {
+  font-size: 16px;
   font-weight: 300;
   color: #999999;
 }
 .alert-success {
   display: none;
+}
+@media screen and (max-width: 767px) {
+  #contact-form-body {
+    margin-top: 20px;
+  }
 }
