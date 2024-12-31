@@ -7,7 +7,28 @@
 body {
   background-color: #050815;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
 
+::-webkit-scrollbar-track {
+  background: #cacbff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #32037e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5642a5;
+}
+
+.scrollbar-container {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1; /* Kaydırıcı rengi ve iz rengi */
+}
 .bg-page1 {
   background-image: url("./source/herobg.png");
   height: 100vh;
@@ -128,6 +149,20 @@ body {
   }
 }
 
+/* -------Sechkin information------- */
+.card {
+  background-color: #302850;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 350px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+  border: 1px solid #8e5efa;
+  box-shadow: 0 0 20px hsla(258, 94%, 67%, 0.856);
+}
+
+/* -------timeline------- */
 .timeline {
   position: relative;
   display: block;
@@ -288,7 +323,7 @@ body {
 }
 /* ----- contact us ----- */
 .contact {
-  padding: 70px 0;
+  padding: 20px 0;
 }
 
 .contact .heading h2 {
@@ -390,6 +425,7 @@ body {
   font-weight: 300;
   color: #999999;
 }
+
 .alert-success {
   display: none;
 }
