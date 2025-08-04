@@ -434,3 +434,26 @@ body {
     margin-top: 20px;
   }
 }
+
+.ribbon-wrapper {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.ribbon {
+  font: bold 12px sans-serif;
+  color: #fff;
+  text-align: center;
+  transform: rotate(-45deg);
+  position: relative;
+  padding: 7px 0;
+  width: 140px;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.3);
+  top: 15px;
+  left: -40px;
+}
