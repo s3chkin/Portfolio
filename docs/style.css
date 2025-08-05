@@ -457,3 +457,60 @@ body {
   top: 15px;
   left: -40px;
 }
+
+/* Beautiful Progress Animation */
+.progress-bar-laravel-php {
+  background: linear-gradient(
+    90deg,
+    #ad20ff,
+    #6435ff,
+    #6320ff,
+    #9035ff,
+    #9320ff
+  );
+  background-size: 300% 100%;
+  animation: beautifulLaravel 2s linear infinite;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 45, 32, 0.5);
+}
+
+.progress-bar-laravel-php::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+  animation: beautifulShimmer 1.5s linear infinite;
+}
+
+@keyframes beautifulLaravel {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+@keyframes beautifulShimmer {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
