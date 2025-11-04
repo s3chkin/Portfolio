@@ -103,6 +103,10 @@ body {
   }
 }
 
+.hero-about-me-text {
+  max-width: 400px;
+}
+
 .gradient-image-container img {
   animation: glow 1.5s ease-in-out infinite;
 }
@@ -271,30 +275,6 @@ body {
 .techStackIconsBody:hover img {
   transform: scale(1.2);
 }
-
-/* .project-btn {
-  background-color: rgba(255, 255, 255, 0);
-  background: linear-gradient(#20193e, #20193e) padding-box,
-    linear-gradient(60deg, #00f, #00e8ff) border-box;
-  color: #ffffff;
-  padding: 3px 70px;
-  border: 3px solid transparent;
-  border-radius: 40px;
-  display: inline-block;
-  font-size: 22px;
-  box-shadow: 0 0 40px hsla(259, 100%, 55%, 0.856);
-  text-decoration: none;
-  transition: background 0.3s ease-in-out, filter 0.3s ease-in-out,
-    color 0.3s ease-in-out;
-}
-
-.project-btn:hover {
-  cursor: pointer;
-  background: linear-gradient(60deg, #00f, #00e8ff) padding-box,
-    linear-gradient(120deg, #00f, #00e8ff) border-box;
-  color: white;
-  filter: brightness(1.2);
-} */
 
 .cardText {
   height: 30%;
@@ -619,6 +599,10 @@ body {
     width: 280px;
     height: 180px;
   }
+
+  .hero-about-me-text {
+    width: 280px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -627,4 +611,14 @@ body {
     max-width: 300px;
     height: 200px;
   }
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+#education,
+#techStack,
+#projects,
+#contactMe {
+  scroll-margin-top: 65px;
 }
