@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Sechkin Rahim | Web Developer</title>
     <link rel="icon" href="./source/Macbook Pro.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,9 +13,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    
     <link rel="stylesheet" href="style.css">
 
 
@@ -40,36 +37,56 @@
     </script>
 
 
-    <meta property="og:title" content="Sechkin - Portfolio" />
-    <meta property="og:description" content="CV of Sechkin Rahim..." />
+    <meta property="og:title" content="Sechkin Rahim | Web Developer — résumé" />
+    <meta property="og:description" content="Student at TU–Varna (Software and Internet Technologies). Web developer with WordPress — 6+ months professional experience." />
     <meta property="og:image" content="https://s3chkin.github.io/Portfolio/source/Sechkin-Portfolio.jpg" />
     <meta property="og:type" content="website" />
 
 
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="color: black;">
-        <div class="container-fluid" style="max-width: 1400px;">
-            <a class="navbar-brand" href="#" style="color: white; font-weight: 900; font-size: 25px;">Sechkin</a>
-            <button style="color: white;" class="navbar-toggler first-button" type="button" data-bs-toggle="collapse"
+<body data-i18n-title-key="meta.title">
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar fixed-top">
+        <div class="container-fluid navbar-inner">
+            <a class="navbar-brand" href="#home" data-i18n="hero.name">Sechkin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="color: white;"></span>
+                data-i18n-aria-label="common.ariaNavToggle" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#education">Education</a>
+                        <a class="nav-link js-nav-scroll active" href="#home" aria-current="page" data-i18n="nav.profile">Home</a>
+                    </li>
+                    <li class="nav-item d-none">
+                        <a class="nav-link js-nav-scroll" href="#education" data-i18n="nav.education">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#techStack">Tech stack</a>
+                        <a class="nav-link js-nav-scroll" href="#experience" data-i18n="nav.experience">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                        <a class="nav-link js-nav-scroll" href="#techStack" data-i18n="nav.skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contactMe">Contact me</a>
+                        <a class="nav-link js-nav-scroll" href="#projects" data-i18n="nav.projects">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navMoreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.more">More</a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navMoreDropdown">
+                            <li><a class="dropdown-item js-nav-scroll" href="#education" data-i18n="nav.education">Education</a></li>
+                            <li><a class="dropdown-item js-nav-scroll" href="#extras" data-i18n="nav.certificates">Certificates</a></li>
+                            <li><a class="dropdown-item" href="projects.html" data-i18n="nav.fullList">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-nav-scroll" href="#contactMe" data-i18n="nav.contact">Contact</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-lg-2 mt-2 mt-lg-0" role="presentation">
+                        <div class="lang-switcher" role="group" data-i18n-aria-label="nav.langAria" aria-label="Language">
+                            <button type="button" class="lang-switch-btn lang-switch-btn--active" data-lang="en" aria-pressed="true">EN</button>
+                            <button type="button" class="lang-switch-btn" data-lang="bg" aria-pressed="false">БГ</button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -77,29 +94,23 @@
     </nav>
 
 
-    <section id="home" class="page1" style="margin-top: 40px;">
+    <section id="home" class="page1 page-hero">
         <div class="bg-page1 d-flex justify-content-center align-items-center">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 text-white text-center text-md-start">
-                        <h1 class="fw-bold display-4" data-aos="fade-down">Hi, I'm <span
-                                style="color:#8e5efa;">Sechkin</span></h1>
-                        <h4 class="mt-3" data-aos="fade-down">Web developer: <span id="typewriter"
-                                style="color: #ab89f8;"></span></h4>
-                                <div class="d-flex d-md-block justify-content-center">
-                                    <p class="mt-3 hero-about-me-text " data-aos="slide-down">
-                                        I am a software and internet technologies student and
-                                        working as WordPress developer.
-                                    </p>
-                                </div>
-                                  
-                        <a data-aos="fade-up" href="./source/Sechkin - CV.pdf" target="_blank" type="button"
-                            class="btn btn-primary" style="width: 150px;" download="">
-                            View CV</a>
+                        <h1 class="fw-bold display-4" data-aos="fade-down"><span data-i18n="hero.greeting">Hi, I'm </span><span class="hero-title-name">Sechkin</span></h1>
+                        <h4 class="mt-3" data-aos="fade-down"><span data-i18n="hero.rolePrefix">Web Developer: </span><span id="typewriter" class="hero-typewriter"></span></h4>
+                        <div class="d-flex d-md-block justify-content-center">
+                            <p class="mt-3 hero-about-me-text" data-aos="slide-down" data-i18n="hero.intro">
+                                I am a Software and Internet Technologies student with professional experience in web development. I work with WordPress - maintaining live systems, optimizing performance, and developing custom functionality - while expanding my skills in ASP.NET.
+                            </p>
+                        </div>
+                        <a data-aos="fade-up" href="./source/Sechkin - CV.pdf" target="_blank"
+                            class="btn btn-primary hero-cv-btn" download data-i18n="hero.cvBtn">CV (PDF)</a>
                     </div>
                     <div class="col-12 col-md-6 text-center" data-aos="fade-left">
-                        <img decoding="async" src="./source/Macbook Pro.png" alt="Macbook Pro" class="img-fluid"
-                            style="max-width: 100%;">
+                        <img decoding="async" src="./source/Macbook Pro.png" alt="Laptop illustration" class="img-fluid hero-illustration" data-i18n-attr-alt="hero.laptopAlt">
                     </div>
                 </div>
             </div>
@@ -108,48 +119,40 @@
 
     <div class="loader"></div>
 
-    <div class="container" style="margin-top: 80px;">
-        <div id="education">
-            <div style="color: white; margin-top: 15px; margin-bottom: 25px;">
-                <div class="d-flex justify-content-between">
-
-                    <div class="container pt-5">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-md-6">
-                                <h2 class="fw-normal">Education</h2>
-                                <ul class="timeline mt-4 pr-md-5">
+    <div class="container main-content site-main">
+        <div id="education" class="content-section content-section--tight content-section--edu">
+            <div class="education-block education-block--narrow">
+                <div class="education-inner pt-4 pt-md-5">
+                                <header class="section-header">
+                                    <h2 class="section-title" data-i18n="edu.title">Education</h2>
+                                    <p class="section-lead" data-i18n="edu.lead">School, university, and extra courses.</p>
+                                </header>
+                                <ul class="education-timeline education-timeline--stacked mt-4">
                                     <li data-aos="fade-right">
-                                        <div class="title">2018 - 2023</div>
+                                        <div class="title" data-i18n="edu.schoolPeriod">2018 - 2023</div>
                                         <div class="details">
-                                            <h5>PGMETT "Hr. Botev"</h5>
-                                            <small class="fg-theme">Secondary education</small>
-                                            <p>I studied and graduated in Applied Programming in secondary school. I
-                                                started getting involved in web programming as early as 2020.</p>
+                                            <h5 data-i18n="edu.schoolName">PGMETT "Hr. Botev"</h5>
+                                            <small class="fg-theme" data-i18n="edu.schoolKind">Secondary education</small>
+                                            <p data-i18n="edu.schoolText">PGMETT “Hristo Botev”, Shumen - Applied Programming (2018–2023). More web-focused from 2020.</p>
                                         </div>
                                     </li>
                                     <li data-aos="fade-right">
-                                        <div class="title">2023 - now</div>
+                                        <div class="title" data-i18n="edu.uniPeriod">2023 – now</div>
                                         <div class="details">
-                                            <h5>Technical university of Varna</h5>
-                                            <small class="fg-theme">University</small>
-                                            <p>I am pursuing higher education and am currently in my third year,
-                                                specializing in Software and Internet Technologies.</p>
+                                            <h5 data-i18n="edu.uniName">Technical university of Varna</h5>
+                                            <small class="fg-theme" data-i18n="edu.uniKind">University</small>
+                                            <p data-i18n="edu.uniText">Technical University of Varna — Software and Internet Technologies, year three (2023–now).</p>
                                         </div>
                                     </li>
                                     <li data-aos="fade-right">
-                                        <div class="title">now</div>
+                                        <div class="title" data-i18n="edu.periodNow">Ongoing</div>
                                         <div class="details">
-                                            <h5>Udemy courses</h5>
-                                            <small class="fg-theme">Video tutorials</small>
-                                            <p>I watch video tutorials on JavaScript on Udemy and then I plan to
-                                                learn React.js and Node.js. I currently work as a web developer with WordPress.</p>
+                                            <h5>Udemy</h5>
+                                            <small class="fg-theme" data-i18n="edu.udemyKind">Courses</small>
+                                            <p data-i18n="edu.udemyText">JavaScript course on Udemy; next I want to go deeper into React and Node.</p>
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -159,489 +162,248 @@
 
 
 
-        <h2 id="techStack" class="fw-bold text-white" style="margin-bottom: 10px;"><b>My Skills</b></h2>
-        <p style="color: #8894d7; border-left: solid; padding-left: 5px; margin-bottom: 25px;"> Tech stack</p>
-        <div>
-            <div class="d-flex flex-wrap justify-content-around gap-3" data-aos="fade-zoom-in">
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/c-sharp.png" alt="C#" class="img-fluid" style="width: 55px;">
-                </div>
+        <section id="experience" class="content-section journey-block" data-aos="fade-up" aria-labelledby="journey-heading">
+            <div class="journey-block__glow" aria-hidden="true"></div>
+            <header class="section-header section-header--center journey-block__header">
+                <p class="journey-eyebrow" data-i18n="journey.eyebrow">Professional Milestones</p>
+                <h2 class="section-title" id="journey-heading" data-i18n="journey.title">Key steps in my journey as a web developer.</h2>
+                <p class="section-lead journey-block__lead" data-i18n="journey.lead">From international experience and structural internships to architecting real-world web platforms.</p>
+            </header>
+            <div class="journey-bento" role="list">
+                <article class="journey-card journey-card--travel" data-aos="fade-up" data-aos-delay="40" role="listitem">
+                    <div class="journey-card__shine" aria-hidden="true"></div>
+                    <div class="journey-card__head">
+                        <div class="journey-card__icon" aria-hidden="true"><i class="fa-solid fa-plane-departure"></i></div>
+                        <span class="journey-card__year" data-i18n="journey.y2022">2022</span>
+                    </div>
+                    <span class="journey-card__tag" data-i18n="journey.tagErasmus">Study abroad</span>
+                    <h3 class="journey-card__title" data-i18n="journey.erasmusTitle">Erasmus+ Practice | Portugal</h3>
+                    <p class="journey-card__text" data-i18n="journey.erasmusText">Completed a 2-week international program in Portugal, working as a web developer and gaining early hands-on experience.</p>
+                </article>
+                <article class="journey-card journey-card--intern" data-aos="fade-up" data-aos-delay="90" role="listitem">
+                    <div class="journey-card__shine" aria-hidden="true"></div>
+                    <div class="journey-card__head">
+                        <div class="journey-card__icon" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></div>
+                        <span class="journey-card__year" data-i18n="journey.y2025a">2025</span>
+                    </div>
+                    <span class="journey-card__tag" data-i18n="journey.tagIntern">Internship</span>
+                    <h3 class="journey-card__title" data-i18n="journey.internTitle">Web Developer Intern | Touch Point</h3>
+                    <p class="journey-card__text" data-i18n="journey.internText">Gained practical experience in a professional environment, working closely with senior developers and team members on real-world tasks.</p>
+                </article>
+                <article class="journey-card journey-card--work" data-aos="fade-up" data-aos-delay="140" role="listitem">
+                    <div class="journey-card__shine" aria-hidden="true"></div>
+                    <div class="journey-card__head">
+                        <div class="journey-card__icon" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></div>
+                        <span class="journey-card__year" data-i18n="journey.y2025now">2025 — Present</span>
+                    </div>
+                    <span class="journey-card__tag" data-i18n="journey.tagWork">Current role</span>
+                    <h3 class="journey-card__title" data-i18n="journey.workTitle">Web Developer | Grajdani na kvartala</h3>
+                    <p class="journey-card__text" data-i18n="journey.workText">Develop and architect complex web platforms, custom E-learning systems with bespoke plugins, and international real estate portals (UK/BG). Deliver high-profile projects, including UI/UX redesigns for financial institutions (Dubai), while ensuring top-tier security and performance tuning across all live applications.</p>
+                </article>
+            </div>
+        </section>
 
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/social.png" alt="Social" class="img-fluid" style="width: 55px;">
-                </div>
+        <div id="techStack" class="content-section content-section--skills">
+            <header class="section-header section-header--center">
+                <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+                <p class="section-lead" data-i18n="skills.lead">Most of my work is WordPress; I also study .NET and front-end.</p>
+            </header>
 
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/js.png" alt="JavaScript" class="img-fluid" style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/efCore.png" alt="JavaScript" class="img-fluid"
-                        style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/html.png" alt="HTML" class="img-fluid" style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/css-3.png" alt="CSS" class="img-fluid" style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/bootstrap.png" alt="Bootstrap" class="img-fluid"
-                        style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/php.svg" alt="pph" class="img-fluid"
-                        style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/laravel.png" alt="laravel" class="img-fluid"
-                        style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/wp.png" alt="WordPress" class="img-fluid"
-                        style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/tailwindCss.svg.png" alt="tailwindCss" class="img-fluid"
-                        style="width: 55px;">
-                </div>
-
-
+            <div class="skills-bundle">
+            <div class="skills-panels" data-aos="fade-up">
+                <article class="skill-panel skill-panel--accent">
+                    <h3 class="skill-panel__title" data-i18n="skills.wpTitle">WordPress Development</h3>
+                    <ul class="skill-panel__list">
+                        <li data-i18n="skills.wpLi1">System Maintenance — Core updates, performance stability, and security patches.</li>
+                        <li data-i18n="skills.wpLi2">Performance Optimization — Speed tuning and database optimization.</li>
+                        <li data-i18n="skills.wpLi3">Infrastructure &amp; Hosting — cPanel management and advanced backups.</li>
+                        <li data-i18n="skills.wpLi4">Custom Development — Custom Plugin Development designed for seamless Elementor styling and integration.</li>
+                        <li data-i18n="skills.wpLi5">Integrations &amp; SEO — Advanced forms and technical SEO setups.</li>
+                    </ul>
+                </article>
+                <article class="skill-panel">
+                    <h3 class="skill-panel__title" data-i18n="skills.netTitle">.NET &amp; back-end</h3>
+                    <p class="skill-panel__text" data-i18n="skills.netLead">C#, ASP.NET Core, Entity Framework Core, PHP, Laravel.</p>
+                </article>
+                <article class="skill-panel">
+                    <h3 class="skill-panel__title" data-i18n="skills.feTitle">Front-end</h3>
+                    <p class="skill-panel__text" data-i18n="skills.feLead">HTML5, CSS3, JavaScript (Fundamentals), Bootstrap, Tailwind CSS, Responsive Layouts. UI/UX Design: Figma (Wireframing, Prototyping, Component Design).</p>
+                </article>
             </div>
 
-        </div>
-
-
-        <div class="container" style="margin-top: 50px;">
-            <div class="row">
-                <!-- Първа колона -->
-                <div class="col-12 col-md-6">
-                    <div class="mb-4">
-                        <div class="d-flex justify-content-between text-white">
-                            <p>C#</p>
-                            <p>60%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:60%;" data-aos="slide-right"
-                                data-aos-duration="3000ms"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-4">
-                        <div class="d-flex justify-content-between text-white">
-                            <p>ASP .Net</p>
-                            <p>75%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:75%;" data-aos="slide-right"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-4">
-                        <div class="d-flex justify-content-between text-white">
-                            <p>JavaScript</p>
-                            <p>40%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " style="width:40%;" data-aos="slide-right"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-4">
-                        <div class="d-flex justify-content-between text-white">
-                            <p>Laravel & PHP</p>
-                            <p class="experience-text">In Progress</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-laravel-php" style="width:100%;" data-aos="slide-right"></div>
-                        </div>
-                    </div>
-
+            <p class="skills-icons-label" data-i18n="skills.iconsLabel">Tools I use</p>
+            <div class="d-flex justify-content-center gap-2 tech-stack-row tech-stack-row--compact tech-stack-row--skills" data-aos="fade-up" data-aos-delay="80">
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/wp.png" alt="WordPress" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/html.png" alt="HTML" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/css-3.png" alt="CSS" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/js.png" alt="JavaScript" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/bootstrap.png" alt="Bootstrap" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/tailwindCss.svg.png" alt="Tailwind CSS" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm" title="Figma">
+                    <img decoding="async" src="./source/figma.png" alt="Figma" class="img-fluid tech-stack-img tech-stack-img--sm tech-stack-img--figma">
                 </div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/php.svg" alt="PHP" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/laravel.png" alt="Laravel" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/c-sharp.png" alt="C#" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/social.png" alt="ASP.NET" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+                <div class="techStackIconsBody techStackIconsBody--sm"><img decoding="async" src="./source/efCore.png" alt="Entity Framework Core" class="img-fluid tech-stack-img tech-stack-img--sm"></div>
+            </div>
 
-                <!-- Втора колона -->
-                <div class="col-12 col-md-6">
-                    <div class="mb-4">
-                        <div class="d-flex justify-content-between text-white">
-                            <p>HTML & CSS</p>
-                            <p>75%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:75%;" data-aos="slide-right"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-4">
-                        <div class="d-flex justify-content-between text-white">
-                            <p>Bootstrap | Tailwind Css</p>
-                            <p>60%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " style="width:60%;" data-aos="slide-right"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-4">
-                        <div class="d-flex justify-content-between text-white">
-                            <p>Entity Framework Core</p>
-                            <p>70%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " style="width:70%;" data-aos="slide-right"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-4">
-                        <div class="d-flex justify-content-between text-white">
-                            <p>WordPress</p>
-                            <p>80%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:80%;" data-aos="slide-right"></div>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="slide-right" style="display: flex; gap: 7px; color: #8894d7; font-weight: 700; justify-content: center;">
-                    <p  ><i> <span
-                        style="color: white;">Bul</span><span style="color: green;">gar</span><span
-                        style="color: red;">ian</span>(B2),
-                    </i> </p>
-                    <p data-aos="slide-right"><i> 
-                       <span>English(A2),</span>  <br>
-                    </i> </p>
-                    <p data-aos="slide-right" ><i> 
-                        Turkish(C1)</i> </p>
-                </div>
-
-                <div data-aos="slide-right" style="display: flex; gap: 10px; color: #8894d7; font-weight: 700; justify-content: center;">
-                        <span style="font-size: 10px; font-weight: 200;">(English is in progress...)</span>
-                </div>
-
+            <div class="lang-chips" data-aos="fade-up" data-aos-delay="120">
+                <span class="lang-chip lang-chip--bg" data-i18n="skills.chipBg">Bulgarian (B2)</span>
+                <span class="lang-chip" data-i18n="skills.chipEn">English (A2 — in active improvement)</span>
+                <span class="lang-chip" data-i18n="skills.chipTr">Turkish (C1)</span>
+            </div>
             </div>
         </div>
 
+        <div id="projects" class="content-section content-section--projects">
+            <header class="section-header section-header--center">
+                <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+                <p class="section-lead" data-i18n-html="projects.leadHtml">Production web applications, custom platforms, and client projects.</p>
+            </header>
 
-
-        <!-- <p style="color: #8894d7; border-left: solid; padding-left: 5px; margin-bottom: 25px;"> Experience with</p> -->
-
-
-
-
-        <p id="projects" class="border-start "
-            style="color: #8894d7; border-left: solid; padding-left: 5px; margin-top: 25px;">
-            Projects</p>
-
-        <div class="container mt-5">
-            <!-- Back-end Projects -->
-            <div class="row mb-4">
-                <!-- <h2 class="fw-bold text-white" style="margin-bottom: 10px;"><b>Web</b></h2> -->
-
-                <div class="d-flex flex-wrap gap-3 justify-content-center" >
-                    <!-- Project 1 -->
-                    <div class="p-3 text-white" data-aos="slide-up" data-aos-delay="100"
-                        style="background-color: #20193e; border-radius: 15px; width: 330px; min-height: 500px; display: flex; flex-direction: column; position: relative;">
-                        <div class="ribbon-wrapper">
-                            <div class="ribbon" style="background-color: red;">Back-end</div>
-                          </div>
-                        <div class="d-flex justify-content-center">
-                            <img decoding="async" src="./source/Freelancer.jpg" alt="Freelancer"
-                                class="img-fluid rounded" style="width: 100%; max-width: 300px;">
+            <div class="featured-projects-grid">
+                    <article class="p-3 text-white project-card project-card--featured" data-aos="fade-up" data-aos-delay="80">
+                        <div class="ribbon-wrapper"><div class="ribbon" style="background-color: #6b3fd4;">WordPress</div></div>
+                        <div class="project-card__media project-card__media--cover d-flex justify-content-center">
+                            <img decoding="async" src="./source/stk-private-banking.png" alt="STK Private Banking redesign preview" class="img-fluid rounded project-thumb">
                         </div>
-                        <h3 class="mt-3">Freelancer</h3>
-
-                        <p class="text-secondary flex-grow-1">
-                        <span class="badge bg-danger">ASP.NET</span>
-                        <span class="badge bg-info text-dark">CSS Template</span>
-                            <br>
-                            A web application for searching and offering services.
-                            The
-                            site allows posting and accepting ads, creating requests, and communication with the
-                            administrator. The seller can see the buyer's progress...</p>
-                        <div class="d-flex justify-content-center mt-auto">
-                            <a type="button" class="project-btn btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#freelancerModal">
-                                More info
-                            </a>
-
-                            <a href="https://github.com/s3chkin/Freelancer" target="_blank" type="button"
-                                class="project-btn btn btn-primary ms-2">View</a>
+                        <h3 class="project-card__title" data-i18n="wp.wp5.title">Private Bank UI/UX Redesign (Dubai)</h3>
+                        <p class="project-card__meta" data-i18n="wp.wp5.meta">Figma · WordPress · SEO</p>
+                        <p class="project-card__desc" data-i18n="wp.wp5.cardDesc">Visual identity and user interface modernization for a banking platform, engineered with a premium look-and-feel tailored for the high-end financial sector.</p>
+                        <div class="project-card__actions">
+                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#wp5Modal" data-i18n="projects.details">Details</button>
+                            <a href="https://www.stkcif.com/" target="_blank" class="btn btn-outline-accent btn-sm" rel="noopener" data-i18n="projects.live">Live site</a>
                         </div>
-                    </div>
-
-
-                    <!-- Project 2 -->
-                    <!-- <div class="p-3 text-white" data-aos="slide-up"
-                        style="background-color: #20193e; border-radius: 15px; width: 330px; min-height: 500px; display: flex; flex-direction: column; position: relative;">
-                       
-                        <div class="ribbon-wrapper">
-                            <div class="ribbon" style="background-color: red;">Back-end</div>
-                          </div>
-
-                        <div class="d-flex justify-content-center">
-                            <img decoding="async" src="./source/TripPlanner.jpg" alt="Trip Planner"
-                                class="img-fluid rounded" style="width: 100%; max-width: 300px;">
+                    </article>
+                    <article class="p-3 text-white project-card project-card--featured" data-aos="fade-up" data-aos-delay="140">
+                        <div class="ribbon-wrapper"><div class="ribbon" style="background-color: #6b3fd4;">WordPress</div></div>
+                        <div class="project-card__media project-card__media--cover d-flex justify-content-center">
+                            <img decoding="async" src="./source/black-sea-yacht-academy.png" alt="Black Sea Yacht Academy preview" class="img-fluid rounded project-thumb">
                         </div>
-                        <h3 class="mt-3">Trip Planner</h3>
-                        <p class="text-secondary flex-grow-1">A web application designed to facilitate and organize
-                            excursions and trips. The project focuses on developing a platform that provides users
-                            with
-                            the opportunity to explore excursions and cruises...</p>
-                        <div class="d-flex justify-content-center mt-auto">
-                            <a type="button" class="project-btn btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#TripPlannerModal">
-                                More info
-                            </a>
-
-                            <a href="https://drive.google.com/file/d/1GUnH2oncmhqNWtYejqSJTU7p0mP-nFma/view?usp=sharing"
-                                target="_blank" class="project-btn btn btn-primary ms-2">View</a>
+                        <h3 class="project-card__title" data-i18n="wp.wp6.title">Black Sea Yacht Academy — E-Learning Platform</h3>
+                        <p class="project-card__meta" data-i18n="wp.wp6.meta">WordPress · Custom Plugins · SEO</p>
+                        <p class="project-card__desc" data-i18n="wp.wp6.cardDesc">End-to-end development of a premium e-learning and professional qualification platform tailored for the luxury yachting industry.</p>
+                        <div class="project-card__actions">
+                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#wp6Modal" data-i18n="projects.details">Details</button>
+                            <a href="https://blackseayachtacademy.com/" target="_blank" class="btn btn-outline-accent btn-sm" rel="noopener" data-i18n="projects.live">Live site</a>
                         </div>
-                    </div> -->
-                        
-
-                    <!-- Project 3 -->
-                    <div class="p-3 text-white" data-aos="slide-up" data-aos-delay="200"
-                    style="background-color: #20193e; border-radius: 15px; width: 330px; min-height: 500px; display: flex; flex-direction: column; position: relative;">
-                   
-                    <div class="ribbon-wrapper">
-                        <div class="ribbon" style="background-color: orange;">Front-end</div>
-                      </div>
-
-                    <div class="d-flex justify-content-center">
-                        <img decoding="async" src="./source/Metal Acquirer.jpg" alt="Metal Acquirer"
-                            class="img-fluid rounded" style="width: 100%; max-width: 300px;">
-                    </div>
-                    <h3 class="mt-3">Metal Acquirer</h3>
-                    <p class="text-secondary flex-grow-1">
-                        <span class="badge bg-warning text-dark">HTML + CSS</span>
-                        <span class="badge bg-warning text-dark">Bootstrap</span>
-                        <span class="badge bg-warning text-dark">JS</span>
-                            <br>
-                        Metal Acquirer is a website designed to inform users
-                        about
-                        the types of metals collected by the client and the locations from which they can be
-                        delivered. The site provides easy access to...
-                    </p>
-                    <div class="d-flex justify-content-center mt-auto">
-                        <a type="button" class="project-btn btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#MetalAcquirerModal">More
-                            info</a>
-                        <a href="https://github.com/s3chkin/Metal-Acquirer" target="_blank" type="button"
-                            class="project-btn btn btn-primary ms-2">View</a>
-                    </div>
-                    </div>
-
-                      <!-- Project 4 -->
-                      <div class="p-3 text-white" data-aos="slide-up" data-aos-delay="300"
-                      style="background-color: #20193e; border-radius: 15px; width: 330px; min-height: 500px; display: flex; flex-direction: column; position: relative;">
-                      
-                      <div class="ribbon-wrapper">
-                        <div class="ribbon" style="background-color:green">Full stack</div>
-                      </div>
-                      
-                      <div class="d-flex justify-content-center">
-                          <img decoding="async" src="./source/FullTravel.jpg" alt="Full Travel"
-                              class="img-fluid rounded" style="width: 100%; max-width: 300px;">
-                      </div>
-                      <h3 class="mt-3">Full Travel</h3>
-                      <p class="text-secondary flex-grow-1">
-                          <span class="badge bg-success ">ASP.NET</span>
-                        <span class="badge bg-success ">HTML + CSS</span>
-                        <span class="badge bg-success ">Bootstrap</span>
-                        <span class="badge bg-success ">JS</span>
-                            <br>
-                        A web application designed to connect passengers
-                          seeking
-                          shared rides between cities with drivers offering available seats in their vehicles.
-                          Through
-                          FullTravel, users can easily find a suitable shared ride...</p>
-                      <div class="d-flex justify-content-center mt-auto">
-                          <a type="button" class="project-btn btn btn-primary" data-bs-toggle="modal"
-                              data-bs-target="#FullTravelModal">
-                              More info
-                          </a>
-
-                          <a href="https://drive.google.com/file/d/1NIQzYzrLGFOeDE9ImXvO4huSTOwsueif/view?usp=sharing"
-                              target="_blank" class="project-btn btn btn-primary ms-2">View</a>
-                      </div>
-                  </div>
-                </div>
+                    </article>
+                    <article class="p-3 text-white project-card project-card--featured" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ribbon-wrapper"><div class="ribbon" style="background-color: #6b3fd4;">WordPress</div></div>
+                        <div class="project-card__media project-card__media--cover d-flex justify-content-center">
+                            <img decoding="async" src="./source/kauza-bulgaria.png" alt="Kauza Bulgaria project preview" class="img-fluid rounded project-thumb">
+                        </div>
+                        <h3 class="project-card__title" data-i18n="wp.wp7.title">Kauza Bulgaria — Social Impact Platform</h3>
+                        <p class="project-card__meta" data-i18n="wp.wp7.meta">Figma · WordPress · SEO</p>
+                        <p class="project-card__desc" data-i18n="wp.wp7.cardDesc">End-to-end development of an active web platform dedicated to social causes, community volunteering, and secure donation management in Bulgaria.</p>
+                        <div class="project-card__actions">
+                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#wp7Modal" data-i18n="projects.details">Details</button>
+                            <a href="https://kauzabulgaria.bg/" target="_blank" class="btn btn-outline-accent btn-sm" rel="noopener" data-i18n="projects.live">Live site</a>
+                        </div>
+                    </article>
             </div>
-
-        </div>
-
-
-
-        <!-- ---------------bootstrap modal windows------------------- -->
-        <div class="modal fade" id="freelancerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
-                            Freelancer</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" style="color: gray;">
-                        <div class="d-flex justify-content-center">
-                            <img decoding="async" src="./source/Freelancer.jpg" alt="Freelancer"
-                                class="img-fluid rounded" style="width: 100%; ">
-                        </div>
-                        A web application for searching and offering services. The site allows
-                        posting and accepting ads, creating requests, and communication with the
-                        administrator. The seller can see the buyer's progress, but only if the
-                        buyer marks it in the ad itself. <br> Progress is indicated in percentages.
-                        The
-                        buyer has the right to select additional services from comparison tables,
-                        depending on the price. Revisions, delivery time, and other details depend
-                        on the price.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a href="https://github.com/s3chkin/Freelancer" target="_blank" type="button"
-                            class="btn btn-primary">View
-                            Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="TripPlannerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered"> 
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
-                            Trip Planner (Excursion organizer)</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" style="color: gray;">
-                        <div class="d-flex justify-content-center">
-                            <img decoding="async" src="./source/TripPlanner.jpg" alt="Trip Planner"
-                                class="img-fluid rounded" style="width: 100%; ">
-                        </div>
-                        A web application designed to facilitate and organize excursions and trips.
-                        The project focuses on developing a platform that provides users with the
-                        opportunity to explore excursions and cruises, offering extensive
-                        information and convenient management tools.
-                        <br>
-                        The system offers different levels of access and permissions, allowing each
-                        user to register, select excursions, and receive detailed information. The
-                        administrator, in turn, has the ability to manage information about
-                        excursions, users, and their bookings.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a href="https://drive.google.com/file/d/1GUnH2oncmhqNWtYejqSJTU7p0mP-nFma/view?usp=sharing"
-                            target="_blank" type="button" class="btn btn-primary">View zip</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="FullTravelModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
-                            Full Travel</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" style="color: gray;">
-                        <div class="d-flex justify-content-center">
-                            <img decoding="async" src="./source/FullTravel.jpg" alt="Trip Planner"
-                                class="img-fluid rounded" style="width: 100%; ">
-                        </div>
-                        A web application designed to connect passengers seeking shared rides
-                        between cities with drivers offering available seats in their vehicles.
-                        Through FullTravel, users can easily find a suitable shared ride or post
-                        their own listing for a shared trip.
-                        <br>
-                        The web application provides a convenient and secure way to organize
-                        intercity transportation, reducing costs and unwanted emissions. With
-                        FullTravel, users can save time, money, and contribute to a cleaner
-                        environment by sharing rides with others.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a href="https://drive.google.com/file/d/1NIQzYzrLGFOeDE9ImXvO4huSTOwsueif/view?usp=sharing"
-                            target="_blank" type="button" class="btn btn-primary">View zip</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="MetalAcquirerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #20193e;">
-                            Metal Acquirer</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" style="color: gray;">
-                        <div class="d-flex justify-content-center">
-                            <img decoding="async" src="./source/Metal Acquirer.jpg" alt="Metal Acquirer"
-                                class="img-fluid rounded" style="width: 100%; ">
-                        </div>
-                        Metal Acquirer is a website designed to inform users about
-                        the types of metals collected by the client and the locations from which they can be
-                        delivered. <br> The site provides easy access to essential information, such as a list of
-                        metals,
-                        contact details, and more. Its clean and functional design ensures maximum user convenience.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a href="https://s3chkin.github.io/Metal-Acquirer/" target="_blank" type="button"
-                            class="btn btn-warning">Live
-                            Demo</a>
-                        <a href="https://github.com/s3chkin/Metal-Acquirer" target="_blank" type="button"
-                            class="btn btn-primary">View Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <p style="color: #8894d7; border-left: solid; padding-left: 5px; margin-bottom: 25px;margin-top: 25px;">
-                Certificates
+            <p class="text-center mt-4 mb-0">
+                <a href="projects.html" class="btn btn-outline-accent" data-i18n="projects.fullListBtn">All projects</a>
             </p>
-            <div class="certificates-container" data-aos="fade-zoom-in">
-                <div class="certificate-item" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="./source/certificate1.jpeg" alt="Certificate 1" class="certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal1">
+        </div>
+
+        <div id="extras" class="content-section content-section--extras">
+            <header class="section-header section-header--center">
+                <h2 class="section-title" data-i18n="extras.certsTitle">Certificates</h2>
+                <p class="extras-col-intro text-center" data-i18n="extras.certsIntro">Official credentials and training certificates.</p>
+            </header>
+
+            <div id="certificates-block" data-aos="fade-up">
+            <div class="certificates-container certificates-container--relaxed">
+                <div class="certificate-item" data-aos="zoom-in" data-aos-delay="100" data-bs-toggle="modal" data-bs-target="#certificateModal1">
+                    <img src="./source/certificate1.jpeg" alt="Erasmus+ intercultural training certificate" class="certificate-img">
                     <div class="certificate-info">
-                        <h5>Certificate 1</h5>
-                        <p>Click to view</p>
+                        <h5 data-i18n="extras.certTitle1">Erasmus+ Professional Mobility &amp; Intercultural Training</h5>
+                        <p data-i18n="extras.certOpen">View document</p>
                     </div>
                 </div>
                 
-                <div class="certificate-item" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="./source/certificate2.jpeg" alt="Certificate 2" class="certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal2">
+                <div class="certificate-item" data-aos="zoom-in" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#certificateModal2">
+                    <img src="./source/certificate2.jpeg" alt="Erasmus+ computer engineering training certificate" class="certificate-img">
                     <div class="certificate-info">
-                        <h5>Certificate 2</h5>
-                        <p>Click to view</p>
+                        <h5 data-i18n="extras.certTitle2">Erasmus+ Specialized Training in Computer Engineering &amp; Technology</h5>
+                        <p data-i18n="extras.certOpen">View document</p>
                     </div>
                 </div>
                 
-                <div class="certificate-item" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="./source/certificate3.jpeg" alt="Certificate 3" class="certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal3">
+                <div class="certificate-item" data-aos="zoom-in" data-aos-delay="300" data-bs-toggle="modal" data-bs-target="#certificateModal3">
+                    <img src="./source/certificate3.jpeg" alt="Erasmus+ certificate Portugal" class="certificate-img">
                     <div class="certificate-info">
-                        <h5>Certificate 3</h5>
-                        <p>Click to view</p>
+                        <h5 data-i18n="extras.certTitle3">Erasmus+ International Web Development Internship — Portugal</h5>
+                        <p data-i18n="extras.certOpen">View document</p>
                     </div>
                 </div>
             </div>
+            </div>
+        </div>
+
+        <div id="toolkit" class="content-section content-section--toolkit">
+            <header class="section-header section-header--center">
+                <h2 class="section-title" data-i18n="extras.toolsTitle">Tools &amp; Environment</h2>
+            </header>
+
+            <div id="devtools-block" data-aos="fade-up" data-aos-delay="80">
+                <div class="extras-tool-stack">
+                    <section class="extras-tool-card" aria-labelledby="extras-workflow-heading">
+                        <h3 class="extras-subtitle" id="extras-workflow-heading" data-i18n="extras.localTitle">IDEs &amp; Editors</h3>
+                        <p class="extras-tool-block__text" data-i18n="extras.localText">Visual Studio, JetBrains Rider, VS Code</p>
+                        <div class="devtools-inline devtools-inline--labeled d-flex flex-wrap gap-2">
+                            <div class="techStackIconsBody techStackIconsBody--sm" title="Visual Studio">
+                                <img decoding="async" src="./source/visual-studio.png" alt="Visual Studio" class="img-fluid tech-stack-img tech-stack-img--sm">
+                            </div>
+                            <div class="techStackIconsBody techStackIconsBody--sm" title="JetBrains Rider">
+                                <img decoding="async" src="./source/rideride.png" alt="JetBrains Rider" class="img-fluid tech-stack-img tech-stack-img--sm">
+                            </div>
+                            <div class="techStackIconsBody techStackIconsBody--sm" title="Visual Studio Code">
+                                <img decoding="async" src="./source/vs-code.png" alt="Visual Studio Code" class="img-fluid tech-stack-img tech-stack-img--sm">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="extras-tool-card" aria-labelledby="extras-ide-heading">
+                        <h3 class="extras-subtitle" id="extras-ide-heading" data-i18n="extras.ideTitle">Local Servers &amp; Databases</h3>
+                        <p class="extras-tool-block__text" data-i18n="extras.ideText">Local WP, XAMPP, Microsoft SQL Server, MySQL</p>
+                        <div class="devtools-inline devtools-inline--labeled d-flex flex-wrap gap-2">
+                            <div class="techStackIconsBody techStackIconsBody--sm" title="Local WP">
+                                <img decoding="async" src="./source/local-wp.png" alt="Local WP" class="img-fluid tech-stack-img tech-stack-img--sm">
+                            </div>
+                            <div class="techStackIconsBody techStackIconsBody--sm" title="Microsoft SQL Server">
+                                <img decoding="async" src="./source/sql-server.png" alt="Microsoft SQL Server" class="img-fluid tech-stack-img tech-stack-img--sm">
+                            </div>
+                            <div class="techStackIconsBody techStackIconsBody--sm" title="XAMPP">
+                                <img decoding="async" src="./source/xampp.png" alt="XAMPP" class="img-fluid tech-stack-img tech-stack-img--sm">
+                            </div>
+                            <div class="techStackIconsBody techStackIconsBody--sm techStackIconsBody--label" title="MySQL">
+                                <span class="tech-stack-text-badge">MySQL</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="extras-tool-card" aria-labelledby="extras-systems-heading">
+                        <h3 class="extras-subtitle" id="extras-systems-heading" data-i18n="extras.workflowTitle">Workflow &amp; Systems</h3>
+                        <p class="extras-tool-block__text" data-i18n="extras.workflowText">Git / GitHub, cPanel</p>
+                        <div class="devtools-inline devtools-inline--labeled d-flex flex-wrap gap-2">
+                            <div class="techStackIconsBody techStackIconsBody--sm" title="Git">
+                                <img decoding="async" src="./source/git.png" alt="Git" class="img-fluid tech-stack-img tech-stack-img--sm">
+                            </div>
+                            <div class="techStackIconsBody techStackIconsBody--sm" title="GitHub">
+                                <img decoding="async" src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" class="img-fluid tech-stack-img tech-stack-img--sm tech-stack-img--brandfix">
+                            </div>
+                            <div class="techStackIconsBody techStackIconsBody--sm" title="cPanel">
+                                <img decoding="async" src="https://cdn.simpleicons.org/cpanel/FF6C2C" alt="cPanel" class="img-fluid tech-stack-img tech-stack-img--sm tech-stack-img--brandfix">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
         <!-- Certificate Modals -->
         <div class="modal fade" id="certificateModal1" tabindex="-1" aria-labelledby="certificateModalLabel1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -651,7 +413,7 @@
                             OF COMPLETION OF A COURSE IN PRE-DEPARTURE INTERCULTURAL TRAINING
                             UNDER THE ERASMUS+ PROGRAMME
                             </h6>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center">
                         <img src="./source/certificate1.jpeg" class="img-fluid" alt="Certificate 1">
@@ -668,7 +430,7 @@
                             OF COMPLETION OF A COURSE IN PRE-DEPARTURE SPECIALISED EDUCATIONAL TRAINING
                             IN THE FIELD OF "COMPUTER ENGINEERING" UNDER THE ERASMUS+ PROGRAMME
                             </h6>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center">
                         <img src="./source/certificate2.jpeg" class="img-fluid" alt="Certificate 2">
@@ -681,9 +443,9 @@
             <div class="modal-dialog modal-md modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h6 class="modal-title" id="certificateModalLabel3">Attended the programme in Braga, Portugal, and completed the internship at Phosphorland - Consultoria Agrícola Unipessoal Lda.
+                        <h6 class="modal-title" id="certificateModalLabel3">Erasmus+ programme certificate from Braga, Portugal.
                             </h6>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center">
                         <img src="./source/certificate3.jpeg" class="img-fluid" alt="Certificate 3">
@@ -691,113 +453,144 @@
                 </div>
             </div>
         </div>
-  </div>
 
-      
-
-        <div style="margin-top: 20px;" data-aos="fade-zoom-in">
-            <p style="color: #8894d7; border-left: solid; padding-left: 5px; margin-bottom: 25px;margin-top: 25px;">
-                Development environments
-            </p>
-            <!-- <h2 class="fw-bold text-white" style="margin-top: 30px; margin-bottom: 15px;"><b>Windows</b></h2> -->
-            <div class="d-flex flex-wrap justify-content-around gap-3">
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/visual-studio.png" alt="" class="img-fluid"
-                        style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/vs-code.png" alt="" class="img-fluid" style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/rideride.png" alt="" class="img-fluid" style="width: 55px;">
-                </div>
-
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/sql-server.png" alt="" class="img-fluid" style="width: 55px;">
-                </div>
-                
-                <div class="techStackIconsBody">
-                    <img decoding="async" src="./source/xampp.png" alt="" class="img-fluid" style="width: 55px;">
+        <div class="modal fade" id="wp5Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wp5ModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="wp5ModalTitle" data-i18n="wp.wp5.title">Private Bank UI/UX Redesign (Dubai)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img decoding="async" src="./source/stk-private-banking.png" alt="STK Private Banking redesign project" class="img-fluid rounded w-100" data-i18n-attr-alt="wp.wp5.altProject">
+                        </div>
+                        <p data-i18n="wp.wp5.modalDesc">Comprehensive modernization of the visual identity and user interface for a prominent banking platform. The project encompasses advanced UI/UX restructuring, interactive Figma prototyping, and layout optimization to deliver a high-end, contemporary digital experience tailored for the premium financial sector.</p>
+                        <p class="mb-0" data-i18n-html="wp.wp5.techLine"><strong>Technologies:</strong> Figma · WordPress · SEO</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                        <a href="https://www.stkcif.com/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.live">Live site</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <p id="contactMe"
-            style="color: #8894d7; border-left: solid; padding-left: 5px; margin-bottom: 5px;margin-top: 25px;">
-            Contact me
-        </p>
+        <div class="modal fade" id="wp6Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wp6ModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="wp6ModalTitle" data-i18n="wp.wp6.title">Black Sea Yacht Academy — E-Learning Platform</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img decoding="async" src="./source/black-sea-yacht-academy.png" alt="Black Sea Yacht Academy project" class="img-fluid rounded w-100" data-i18n-attr-alt="wp.wp6.altProject">
+                        </div>
+                        <p data-i18n="wp.wp6.modalDesc">End-to-end development of a premium e-learning and professional qualification platform tailored for the luxury yachting industry. The project focuses on high-end presentation of specialized maritime courses and streamlining the student journey toward international career placement.</p>
+                        <p class="mb-0" data-i18n-html="wp.wp6.techLine"><strong>Technologies:</strong> WordPress · Custom Plugins · SEO</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                        <a href="https://blackseayachtacademy.com/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.live">Live site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="modal fade" id="wp7Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wp7ModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="wp7ModalTitle" data-i18n="wp.wp7.title">Kauza Bulgaria — Social Impact Platform</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img decoding="async" src="./source/kauza-bulgaria.png" alt="Kauza Bulgaria project" class="img-fluid rounded w-100" data-i18n-attr-alt="wp.wp7.altProject">
+                        </div>
+                        <p data-i18n="wp.wp7.modalDesc">End-to-end development of an active web platform dedicated to social causes and volunteering in Bulgaria. Engineered to foster community engagement, the system streamlines the contribution ecosystem, making it seamless for users to donate securely and participate in charitable initiatives.</p>
+                        <p class="mb-0" data-i18n-html="wp.wp7.techLine"><strong>Technologies:</strong> Figma · WordPress · SEO</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                        <a href="https://kauzabulgaria.bg/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.live">Live site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
 
-
-        <section class="contact" id="contact" >
+        <section class="contact content-section" id="contactMe">
+            <header class="section-header section-header--center">
+                <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+                <p class="section-lead" data-i18n="contact.lead">Write me here or use email / phone below.</p>
+            </header>
             <div class="container">
-                <div class="row d-flex justify-content-between">
+                <div class="row d-flex justify-content-between g-3 g-md-4">
                     <div class="alert alert-success alert-dismissible fade show" role="alert"
                         id="alert-success-desktop">
-                        Message sent successfully!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <span data-i18n="contact.success">Sent.</span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
                     </div>
-                    <div class="col-md-5" data-aos="fade-zoom-in">
+                    <div class="col-md-5 contact-aside" data-aos="fade-up">
 
                         <div class="title">
-                            <h3>Contact detail</h3>
-                            <p>Or use the provided alternative contact methods.</p>
+                            <h3 data-i18n="contact.asideTitle">Direct contact</h3>
                         </div>
                         <div class="content">
                             <div class="info">
                                 <i class="bi bi-telephone-fill"></i>
-                                <h4 class="d-inline-block">PHONE :
+                                <h4 class="contact-info-label"><span data-i18n="contact.phoneLabel">PHONE</span>
                                     <br>
                                     <span>+359895073711</span>
                                 </h4>
                             </div>
                             <div class="info">
                                 <i class="bi bi-envelope-at-fill"></i>
-                                <h4 class="d-inline-block">EMAIL :
+                                <h4 class="contact-info-label"><span data-i18n="contact.emailLabel">EMAIL</span>
                                     <br>
                                     <span>seckins191@gmail.com</span>
                                 </h4>
                             </div>
                             <div class="info">
                                 <i class="bi bi-geo-alt-fill"></i>
-                                <h4 class="d-inline-block">ADDRESS :<br>
-                                    <span>Varna, Bulgaria</span>
+                                <h4 class="contact-info-label"><span data-i18n="contact.addressLabel">LOCATION</span><br>
+                                    <span data-i18n="contact.addressValue">Varna/Shumen, Bulgaria</span>
                                 </h4>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-7" id="contact-form-body">
+                    <div class="col-md-7 contact-form-panel" id="contact-form-body">
                         <form onsubmit="sendMail(); return false;" data-aos="fade-zoom-in">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <label for="name" style="display: none;"></label>
-                                    <input type="text" class="form-control" placeholder="Name" id="name" name="name"
-                                        required>
+                                    <label for="name" class="visually-hidden" data-i18n="contact.labelName">Your name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" id="name" name="name"
+                                        required autocomplete="name" data-i18n-placeholder="contact.namePh">
                                 </div>
                                 <div class="col-sm-12">
-                                    <label for="email" style="display: none;"></label>
-                                    <input type="email" class="form-control" placeholder="Email" id="email" name="email"
-                                        required>
+                                    <label for="email" class="visually-hidden" data-i18n="contact.labelEmail">Email address</label>
+                                    <input type="email" class="form-control" placeholder="Your email" id="email" name="email"
+                                        required autocomplete="email" data-i18n-placeholder="contact.emailPh">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="message" style="display: none;"></label>
+                                <label for="message" class="visually-hidden" data-i18n="contact.labelMessage">Message body</label>
                                 <textarea class="form-control" rows="5" id="message" name="message"
-                                    placeholder="Message" required></textarea>
+                                    placeholder="Your message" required data-i18n-placeholder="contact.messagePh"></textarea>
                             </div>
 
 
                             <div class="alert alert-success alert-dismissible fade show" role="alert"
                                 id="alert-success-mobile">
-                                Message sent successfully!
+                                <span data-i18n="contact.success">Sent.</span>
                                 <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                    aria-label="Close"></button>
+                                    data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
                             </div>
 
-                            <button class="btn btn-block" type="submit"">Send Now</button>
+                            <button class="btn btn-block" type="submit" data-i18n="contact.send">Send</button>
                         </form>
                     </div>
                 </div>
@@ -807,35 +600,27 @@
     </div>
 
 
-    <footer class=" bg-dark text-white text-center p-3">
+    <footer class="site-footer text-white text-center p-3">
                                 <div class="container">
                                     <div
                                         class="d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
-                                        <div class="mb-2 mb-md-0">
-                                            <p>Website developed by <a target="_blank"
-                                                    href="https://www.instagram.com/sechkin.rahim">Sechkin Rahim</a></p>
+                                        <div class="mb-2 mb-md-0 footer-extra-links">
+                                            <p data-i18n-html="footer.lineHtml">Web Developer · <a target="_blank"
+                                                    href="https://www.instagram.com/sechkin.rahim">Sechkin Rahim</a>
+                                                · <a href="projects.html">Portfolio</a></p>
                                         </div>
 
-                                        <div class="mb-3 mb-md-2 d-flex justify-content-center gap-3">
-                                            <a href="https://www.facebook.com/seckin.salim" target="_blank"
-                                                data-mdb-ripple-init class="btn btn-primary"
-                                                style="background-color: #3b5998;" role="button">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            <a href="https://www.instagram.com/sechkin.rahim/" target="_blank"
-                                                data-mdb-ripple-init class="btn btn-primary"
-                                                style="background-color: #ac2bac;" href="#!" role="button">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                            <a href="https://github.com/s3chkin" target="_blank" data-mdb-ripple-init
-                                                class="btn btn-primary" style="background-color: #333333;" href="#!"
-                                                role="button">
-                                                <i class="fab fa-github"></i>
-                                            </a>
+                                        <div class="mb-3 mb-md-2 d-flex justify-content-center gap-2 footer-social-row">
+                                            <a href="https://www.facebook.com/seckin.salim" target="_blank" rel="noopener noreferrer"
+                                                class="footer-social footer-social--fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="https://www.instagram.com/sechkin.rahim/" target="_blank" rel="noopener noreferrer"
+                                                class="footer-social footer-social--ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://github.com/s3chkin" target="_blank" rel="noopener noreferrer"
+                                                class="footer-social footer-social--gh" aria-label="GitHub"><i class="fab fa-github"></i></a>
                                         </div>
 
                                         <div class="mb-2 mb-md-0">
-                                            <p>&copy; 2025 Sechkin Rahim.</p>
+                                            <p data-i18n="footer.copyright">&copy; 2026 Sechkin Rahim.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -845,23 +630,12 @@
 
 
 
-                                <script
-                                    src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                                     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
                                     crossorigin="anonymous"></script>
-                                <script src="./app.js"></script>
-                                <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-                                <script>
-                                    AOS.init({
-                                        once: true, // Всички анимации се стартират само веднъж
-                                        duration: 1200,
-                                    });
-                                </script>
-
-
-
-
-
+    <script src="./i18n.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>

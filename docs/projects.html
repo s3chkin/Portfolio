@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sechkin Rahim</title>
+    <link rel="icon" href="./source/Macbook Pro.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Sechkin Rahim | Portfolio" />
+    <meta property="og:description" content="Production WordPress delivery; ASP.NET and front-end engineering samples." />
+    <meta property="og:type" content="website" />
+</head>
+
+<body data-i18n-title-key="meta.projectsTitle">
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar fixed-top">
+        <div class="container-fluid navbar-inner">
+            <a class="navbar-brand" href="index.html#home" data-i18n="hero.name">Sechkin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                data-i18n-aria-label="common.ariaNavToggle" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home" data-i18n="nav.profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#education" data-i18n="nav.education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#experience" data-i18n="nav.experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#techStack" data-i18n="nav.skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects" data-i18n="nav.projects">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navMoreDropdownProjects" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.more">More</a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navMoreDropdownProjects">
+                            <li><a class="dropdown-item" href="index.html#extras" data-i18n="nav.certificates">Certificates</a></li>
+                            <li><a class="dropdown-item active" href="projects.html" aria-current="page" data-i18n="nav.fullList">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contactMe" data-i18n="nav.contact">Contact</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-lg-2 mt-2 mt-lg-0" role="presentation">
+                        <div class="lang-switcher" role="group" data-i18n-aria-label="nav.langAria" aria-label="Language">
+                            <button type="button" class="lang-switch-btn lang-switch-btn--active" data-lang="en" aria-pressed="true">EN</button>
+                            <button type="button" class="lang-switch-btn" data-lang="bg" aria-pressed="false">БГ</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="loader"></div>
+
+    <main class="container projects-page-main">
+        <header class="projects-page-hero" data-aos="fade-down">
+            <h1 data-i18n="projectsPage.heroTitle">Portfolio</h1>
+            <p data-i18n="projectsPage.heroLead">Production-ready web applications, custom platforms, and commercial client projects.</p>
+        </header>
+
+        <h2 class="projects-subheading" data-i18n="projectsPage.wpHeading">WordPress</h2>
+        <div class="d-flex flex-wrap gap-4 justify-content-center mb-5">
+            <article id="wp-1" class="p-3 text-white project-card project-card--featured" data-aos="fade-up">
+                <div class="ribbon-wrapper"><div class="ribbon" style="background-color: #6b3fd4;">WordPress</div></div>
+                <div class="project-card__media project-card__media--cover d-flex justify-content-center"><img src="./source/nscbg.png" alt="National Sports Cluster preview" class="img-fluid rounded project-thumb" data-i18n-attr-alt="wp.wp1.altPreview"></div>
+                <h3 class="project-card__title" data-i18n="wp.wp1.title">National Sports Cluster</h3>
+                <p class="project-card__meta" data-i18n="wp.wp1.meta">WordPress · Custom Plugins · SEO</p>
+                <p class="project-card__desc" data-i18n="wp.wp1.cardDesc">End-to-end development of a comprehensive web platform unifying sports, business, and innovation in Bulgaria.</p>
+                <div class="project-card__actions"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#wp1Modal" data-i18n="projects.details">Details</button><a href="https://nscbg.com/" target="_blank" class="btn btn-outline-accent btn-sm" rel="noopener" data-i18n="projects.live">Live site</a></div>
+            </article>
+            <article id="wp-2" class="p-3 text-white project-card project-card--featured" data-aos="fade-up" data-aos-delay="50">
+                <div class="ribbon-wrapper"><div class="ribbon" style="background-color: #6b3fd4;">WordPress</div></div>
+                <div class="project-card__media project-card__media--cover d-flex justify-content-center"><img src="./source/click-and-rent.png" alt="Click and Rent preview" class="img-fluid rounded project-thumb" data-i18n-attr-alt="wp.wp2.altPreview"></div>
+                <h3 class="project-card__title" data-i18n="wp.wp2.title">Click &amp; Rent — Short-Term Rental Platform</h3>
+                <p class="project-card__meta" data-i18n="wp.wp2.meta">WordPress · SEO</p>
+                <p class="project-card__desc" data-i18n="wp.wp2.cardDesc">A comprehensive web booking system for short-term rentals in Bulgaria, engineered to fully automate the property search and leasing workflow.</p>
+                <div class="project-card__actions"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#wp2Modal" data-i18n="projects.details">Details</button><a href="https://clickandrent.bg/" target="_blank" class="btn btn-outline-accent btn-sm" rel="noopener" data-i18n="projects.live">Live site</a></div>
+            </article>
+            <article id="wp-5" class="p-3 text-white project-card project-card--featured" data-aos="fade-up" data-aos-delay="200">
+                <div class="ribbon-wrapper"><div class="ribbon" style="background-color: #6b3fd4;">WordPress</div></div>
+                <div class="project-card__media project-card__media--cover d-flex justify-content-center"><img src="./source/stk-private-banking.png" alt="STK Private Banking redesign preview" class="img-fluid rounded project-thumb"></div>
+                <h3 class="project-card__title" data-i18n="wp.wp5.title">Private Bank UI/UX Redesign (Dubai)</h3>
+                <p class="project-card__meta" data-i18n="wp.wp5.meta">Figma · WordPress · SEO</p>
+                <p class="project-card__desc" data-i18n="wp.wp5.cardDesc">Visual identity and user interface modernization for a banking platform, engineered with a premium look-and-feel tailored for the high-end financial sector.</p>
+                <div class="project-card__actions"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#wp5Modal" data-i18n="projects.details">Details</button><a href="https://www.stkcif.com/" target="_blank" class="btn btn-outline-accent btn-sm" rel="noopener" data-i18n="projects.live">Live site</a></div>
+            </article>
+            <article id="wp-6" class="p-3 text-white project-card project-card--featured" data-aos="fade-up" data-aos-delay="250">
+                <div class="ribbon-wrapper"><div class="ribbon" style="background-color: #6b3fd4;">WordPress</div></div>
+                <div class="project-card__media project-card__media--cover d-flex justify-content-center"><img src="./source/black-sea-yacht-academy.png" alt="Black Sea Yacht Academy preview" class="img-fluid rounded project-thumb"></div>
+                <h3 class="project-card__title" data-i18n="wp.wp6.title">Black Sea Yacht Academy — E-Learning Platform</h3>
+                <p class="project-card__meta" data-i18n="wp.wp6.meta">WordPress · Custom Plugins · SEO</p>
+                <p class="project-card__desc" data-i18n="wp.wp6.cardDesc">End-to-end development of a premium e-learning and professional qualification platform tailored for the luxury yachting industry.</p>
+                <div class="project-card__actions"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#wp6Modal" data-i18n="projects.details">Details</button><a href="https://blackseayachtacademy.com/" target="_blank" class="btn btn-outline-accent btn-sm" rel="noopener" data-i18n="projects.live">Live site</a></div>
+            </article>
+            <article id="wp-7" class="p-3 text-white project-card project-card--featured" data-aos="fade-up" data-aos-delay="300">
+                <div class="ribbon-wrapper"><div class="ribbon" style="background-color: #6b3fd4;">WordPress</div></div>
+                <div class="project-card__media project-card__media--cover d-flex justify-content-center"><img src="./source/kauza-bulgaria.png" alt="Kauza Bulgaria preview" class="img-fluid rounded project-thumb"></div>
+                <h3 class="project-card__title" data-i18n="wp.wp7.title">Kauza Bulgaria — Social Impact Platform</h3>
+                <p class="project-card__meta" data-i18n="wp.wp7.meta">Figma · WordPress · SEO</p>
+                <p class="project-card__desc" data-i18n="wp.wp7.cardDesc">End-to-end development of an active web platform dedicated to social causes, community volunteering, and secure donation management in Bulgaria.</p>
+                <div class="project-card__actions"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#wp7Modal" data-i18n="projects.details">Details</button><a href="https://kauzabulgaria.bg/" target="_blank" class="btn btn-outline-accent btn-sm" rel="noopener" data-i18n="projects.live">Live site</a></div>
+            </article>
+        </div>
+
+        <h2 class="projects-subheading" id="legacy-stack" data-i18n="projectsPage.legacyHeading">ASP.NET, front-end &amp; full-stack</h2>
+        <div class="d-flex flex-wrap gap-4 justify-content-center pb-5">
+            <div class="p-3 text-white project-card" data-aos="slide-up">
+                <div class="ribbon-wrapper"><div class="ribbon" style="background-color: red;" data-i18n="projectsPage.ribbonBe">Back-end</div></div>
+                <div class="d-flex justify-content-center"><img decoding="async" src="./source/Freelancer.jpg" alt="Freelancer project preview" class="img-fluid rounded project-thumb"></div>
+                <h3 class="mt-3 h5">Freelancer</h3>
+                <p class="text-secondary small"><span class="badge bg-danger">ASP.NET</span> <span class="badge bg-info text-dark">CSS</span><br><span data-i18n="projectsPage.freelancerDesc">Service marketplace — listings, procurement workflow, administrative messaging.</span></p>
+                <div class="d-flex justify-content-center gap-2 flex-wrap">
+                    <button type="button" class="btn btn-primary project-btn" data-bs-toggle="modal" data-bs-target="#freelancerModal" data-i18n="projects.details">Details</button>
+                    <a href="https://github.com/s3chkin/Freelancer" target="_blank" rel="noopener" class="btn btn-primary project-btn" data-i18n="projectsPage.code">Repository</a>
+                </div>
+            </div>
+            <div class="p-3 text-white project-card" data-aos="slide-up" data-aos-delay="100">
+                <div class="ribbon-wrapper"><div class="ribbon" style="background-color: orange;" data-i18n="projectsPage.ribbonFe">Front-end</div></div>
+                <div class="d-flex justify-content-center"><img decoding="async" src="./source/Metal Acquirer.jpg" alt="Metal Acquirer preview" class="img-fluid rounded project-thumb"></div>
+                <h3 class="mt-3 h5">Metal Acquirer</h3>
+                <p class="text-secondary small"><span class="badge bg-warning text-dark">HTML/CSS/JS</span><br><span data-i18n="projectsPage.metalDesc">Reference web property for metal categories, collection points, and contact routing.</span></p>
+                <div class="d-flex justify-content-center gap-2 flex-wrap">
+                    <button type="button" class="btn btn-primary project-btn" data-bs-toggle="modal" data-bs-target="#MetalAcquirerModal" data-i18n="projects.details">Details</button>
+                    <a href="https://github.com/s3chkin/Metal-Acquirer" target="_blank" rel="noopener" class="btn btn-primary project-btn" data-i18n="projectsPage.code">Repository</a>
+                </div>
+            </div>
+            <div class="p-3 text-white project-card" data-aos="slide-up" data-aos-delay="200">
+                <div class="ribbon-wrapper"><div class="ribbon" style="background-color: green;" data-i18n="projectsPage.ribbonFs">Full stack</div></div>
+                <div class="d-flex justify-content-center"><img decoding="async" src="./source/FullTravel.jpg" alt="Full Travel preview" class="img-fluid rounded project-thumb"></div>
+                <h3 class="mt-3 h5">Full Travel</h3>
+                <p class="text-secondary small"><span class="badge bg-success">ASP.NET</span> <span class="badge bg-success">Bootstrap</span><br><span data-i18n="projectsPage.travelDesc">Inter-city ride-sharing coordination with search and itinerary management.</span></p>
+                <div class="d-flex justify-content-center gap-2 flex-wrap">
+                    <button type="button" class="btn btn-primary project-btn" data-bs-toggle="modal" data-bs-target="#FullTravelModal" data-i18n="projects.details">Details</button>
+                    <a href="https://drive.google.com/file/d/1NIQzYzrLGFOeDE9ImXvO4huSTOwsueif/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary project-btn" data-i18n="projectsPage.archive">Zip Archive</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="freelancerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="freelancerModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="freelancerModalTitle">Freelancer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img decoding="async" src="./source/Freelancer.jpg" alt="Freelancer" class="img-fluid rounded w-100">
+                    </div>
+                    <p data-i18n="projectsPage.freelancerBody">Web platform for service discovery and fulfilment: classified listings, request handling, administrative correspondence. Vendors monitor buyer milestones against published milestones; purchasers configure optional line items via comparative pricing matrices.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                    <a href="https://github.com/s3chkin/Freelancer" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projectsPage.viewCode">Source code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="FullTravelModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fullTravelModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fullTravelModalTitle">Full Travel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img decoding="async" src="./source/FullTravel.jpg" alt="Full Travel" class="img-fluid rounded w-100">
+                    </div>
+                    <p data-i18n="projectsPage.fullTravelBody">Passenger–driver matching for scheduled inter-city travel. Search, reservation, and logistics modules emphasising cost efficiency and emissions reduction.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                    <a href="https://drive.google.com/file/d/1NIQzYzrLGFOeDE9ImXvO4huSTOwsueif/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projectsPage.viewZip">Download archive</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="MetalAcquirerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="metalAcquirerModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="metalAcquirerModalTitle">Metal Acquirer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img decoding="async" src="./source/Metal Acquirer.jpg" alt="Metal Acquirer" class="img-fluid rounded w-100">
+                    </div>
+                    <p data-i18n="projectsPage.metalBody">Information architecture for material taxonomy, geographic acquisition points, and stakeholder contact data; emphasis on legibility and rapid scanning.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                    <a href="https://s3chkin.github.io/Metal-Acquirer/" target="_blank" rel="noopener" class="btn btn-warning" data-i18n="projectsPage.liveDemo">Live demonstration</a>
+                    <a href="https://github.com/s3chkin/Metal-Acquirer" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projectsPage.code">Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wp5Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wp5ModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="wp5ModalTitle" data-i18n="wp.wp5.title">Private Bank UI/UX Redesign (Dubai)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img decoding="async" src="./source/stk-private-banking.png" alt="STK Private Banking redesign project" class="img-fluid rounded w-100" data-i18n-attr-alt="wp.wp5.altProject">
+                    </div>
+                    <p data-i18n="wp.wp5.modalDesc">Comprehensive modernization of the visual identity and user interface for a prominent banking platform. The project encompasses advanced UI/UX restructuring, interactive Figma prototyping, and layout optimization to deliver a high-end, contemporary digital experience tailored for the premium financial sector.</p>
+                    <p class="mb-0" data-i18n-html="wp.wp5.techLine"><strong>Technologies:</strong> Figma · WordPress · SEO</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                    <a href="https://www.stkcif.com/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.live">Live site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wp6Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wp6ModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="wp6ModalTitle" data-i18n="wp.wp6.title">Black Sea Yacht Academy — E-Learning Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img decoding="async" src="./source/black-sea-yacht-academy.png" alt="Black Sea Yacht Academy project" class="img-fluid rounded w-100" data-i18n-attr-alt="wp.wp6.altProject">
+                    </div>
+                    <p data-i18n="wp.wp6.modalDesc">End-to-end development of a premium e-learning and professional qualification platform tailored for the luxury yachting industry. The project focuses on high-end presentation of specialized maritime courses and streamlining the student journey toward international career placement.</p>
+                    <p class="mb-0" data-i18n-html="wp.wp6.techLine"><strong>Technologies:</strong> WordPress · Custom Plugins · SEO</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                    <a href="https://blackseayachtacademy.com/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.live">Live site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wp7Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wp7ModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="wp7ModalTitle" data-i18n="wp.wp7.title">Kauza Bulgaria — Social Impact Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img decoding="async" src="./source/kauza-bulgaria.png" alt="Kauza Bulgaria project" class="img-fluid rounded w-100" data-i18n-attr-alt="wp.wp7.altProject">
+                    </div>
+                    <p data-i18n="wp.wp7.modalDesc">End-to-end development of an active web platform dedicated to social causes and volunteering in Bulgaria. Engineered to foster community engagement, the system streamlines the contribution ecosystem, making it seamless for users to donate securely and participate in charitable initiatives.</p>
+                    <p class="mb-0" data-i18n-html="wp.wp7.techLine"><strong>Technologies:</strong> Figma · WordPress · SEO</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                    <a href="https://kauzabulgaria.bg/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.live">Live site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wp1Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wp1ModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="wp1ModalTitle" data-i18n="wp.wp1.title">National Sports Cluster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img decoding="async" src="./source/nscbg.png" alt="National Sports Cluster project" class="img-fluid rounded w-100" data-i18n-attr-alt="wp.wp1.altProject">
+                    </div>
+                    <p data-i18n="wp.wp1.modalDesc">End-to-end development of a comprehensive web platform for an organization unifying sports, business, and innovation in Bulgaria. The project focuses on a high-profile professional presentation of the cluster's activities, streamlined digital infrastructure, and facilitating seamless connectivity between sports clubs and public institutions.</p>
+                    <p class="mb-0" data-i18n-html="wp.wp1.techLine"><strong>Technologies:</strong> WordPress · Custom Plugins · SEO</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                    <a href="https://nscbg.com/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.live">Live site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wp2Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wp2ModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="wp2ModalTitle" data-i18n="wp.wp2.title">Click &amp; Rent — Short-Term Rental Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="common.ariaClose" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img decoding="async" src="./source/click-and-rent.png" alt="Click and Rent project" class="img-fluid rounded w-100" data-i18n-attr-alt="wp.wp2.altProject">
+                    </div>
+                    <p data-i18n="wp.wp2.modalDesc">Comprehensive web booking ecosystem for short-term apartment rentals in Bulgaria. The project focuses on full automation of the property search and leasing workflow, delivering an intuitive, high-performance dual-interface tailored for both tenants and property hosts.</p>
+                    <p class="mb-0" data-i18n-html="wp.wp2.techLine"><strong>Technologies:</strong> WordPress · SEO</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="projectsPage.modalClose">Dismiss</button>
+                    <a href="https://clickandrent.bg/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.live">Live site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer text-white text-center p-3">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
+                <div class="mb-2 mb-md-0 footer-extra-links">
+                    <p><a href="index.html#home" data-i18n="projectsPage.footerBack">← Back to Home</a> · <a href="index.html#contactMe" data-i18n="footer.contact">Contact</a></p>
+                </div>
+                <div class="mb-2 mb-md-0">
+                    <p class="mb-0" data-i18n="footer.copyright">&copy; 2026 Sechkin Rahim.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./i18n.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
