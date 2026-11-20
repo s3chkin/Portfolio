@@ -132,9 +132,9 @@
         wp6: {
           title: "Black Sea Yacht Academy — E-Learning Platform",
           cardDesc:
-            "End-to-end development of a premium e-learning and professional qualification platform tailored for the luxury yachting industry.",
+            "End-to-end development of a premium e-learning and professional qualification platform tailored for the luxury yachting industry. It also includes a platform for posting job listings in the yachting industry.",
           modalDesc:
-            "End-to-end development of a premium e-learning and professional qualification platform tailored for the luxury yachting industry. The project focuses on high-end presentation of specialized maritime courses and streamlining the student journey toward international career placement.",
+            "End-to-end development of a premium e-learning and professional qualification platform tailored for the luxury yachting industry. The project focuses on high-end presentation of specialized maritime courses and streamlining the student journey toward international career placement. It also includes a platform for posting job listings in the yachting industry.",
           meta: "WordPress · Custom Plugins · SEO",
           techLine: "<strong>Technologies:</strong> WordPress · Custom Plugins · SEO",
           altPreview: "Black Sea Yacht Academy preview",
@@ -364,9 +364,9 @@
         wp6: {
           title: "Платформа за обучение на персонал по яхти — Black Sea Yacht Academy",
           cardDesc:
-            "Цялостно изграждане на платформа за обучение и професионална квалификация в луксозния сегмент на яхтената индустрия.",
+            "Цялостно изграждане на платформа за обучение и професионална квалификация в луксозния сегмент на яхтената индустрия. Сайтът включва и платформа за публикуване на обяви за работа в яхтената индустрия.",
           modalDesc:
-            "Цялостно изграждане на платформа за обучение и професионална квалификация в луксозния сегмент на яхтената индустрия. Проектът е фокусиран върху престижното представяне на курсовете и улесняване на пътя на курсистите към международна реализация.",
+            "Цялостно изграждане на платформа за обучение и професионална квалификация в луксозния сегмент на яхтената индустрия. Проектът е фокусиран върху престижното представяне на курсовете и улесняване на пътя на курсистите към международна реализация. Сайтът включва и платформа за публикуване на обяви за работа в яхтената индустрия.",
           meta: "WordPress · Custom Plugins · SEO",
           techLine: "<strong>Технологии:</strong> WordPress · Custom Plugins · SEO",
           altPreview: "Black Sea Yacht Academy — визуализация",

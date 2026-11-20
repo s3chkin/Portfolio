@@ -1,5 +1,5 @@
 /* Portfolio static cache — bump CACHE_VERSION when you deploy updates */
-const CACHE_VERSION = "2026-11-20.2";
+const CACHE_VERSION = "2026-11-20.3";
 const CACHE_NAME = `portfolio-${CACHE_VERSION}`;
 
 const PRECACHE = [
@@ -8,7 +8,7 @@ const PRECACHE = [
   "./projects.html",
   "./style.css",
   "./app.js",
-  "./i18n.js?v=2026-11-20.2",
+  "./i18n.js?v=2026-11-20.3",
 ];
 
 self.addEventListener("install", (event) => {
