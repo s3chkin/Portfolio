@@ -1,5 +1,5 @@
 /* Portfolio static cache — bump CACHE_VERSION when you deploy updates */
-const CACHE_VERSION = "2026-05-27";
+const CACHE_VERSION = "2026-11-20";
 const CACHE_NAME = `portfolio-${CACHE_VERSION}`;
 
 const PRECACHE = [

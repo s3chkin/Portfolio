@@ -151,6 +151,15 @@
           altPreview: "Kauza Bulgaria project preview",
           altProject: "Kauza Bulgaria project",
         },
+        wp8: {
+          title: "SpomeniX — Online Store",
+          cardDesc: "Online store for personalized metal QR cards that link to digital memories.",
+          modalDesc: "SpomeniX offers personalized metal QR cards. Scanning a card opens a digital page that can include photos, a special location, or a favorite song.",
+          meta: "WordPress · WooCommerce",
+          techLine: "<strong>Technologies:</strong> WordPress · WooCommerce",
+          altPreview: "SpomeniX storefront preview",
+          altProject: "SpomeniX online storefront",
+        },
       },
       extras: {
         toolsTitle: "Tools & Environment",
@@ -373,6 +382,15 @@
           techLine: "<strong>Технологии:</strong> Figma · WordPress · SEO",
           altPreview: "Кауза България — визуализация",
           altProject: "Кауза България — проект",
+        },
+        wp8: {
+          title: "SpomeniX — Онлайн магазин",
+          cardDesc: "Онлайн магазин за персонализирани метални QR карти, които водят към дигитални спомени.",
+          modalDesc: "SpomeniX предлага персонализирани метални QR карти. При сканиране картата отваря дигитална страница, която може да включва снимки, специална локация или любима песен.",
+          meta: "WordPress · WooCommerce",
+          techLine: "<strong>Технологии:</strong> WordPress · WooCommerce",
+          altPreview: "Преглед на онлайн магазина SpomeniX",
+          altProject: "Начална страница на онлайн магазина SpomeniX",
         },
       },
       extras: {
